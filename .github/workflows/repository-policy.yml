@@ -1,0 +1,47 @@
+name: Repository policy
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Reject compiled mod artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          bad="$({ git ls-files '*.dll' '*.pdb' '*.zip' || true; } | grep -Ev '^(mod-src/TFP_Harmony/mod/|mod-src/TFP_CommandExtensions/mod/CommandExtensions\.dll$|mod-src/Xample_MarkersMod/mod/MarkersMod\.dll$|mod-src/DS_VehicleCruiseControl/vendor/TheWinchester/WMMVehicleCruiseControl\.dll$|mod-src/VanillaPlus/src/original/)' || true)"
+          if [[ -n "$bad" ]]; then
+            echo 'Unexpected compiled artifacts are tracked:'
+            echo "$bad"
+            exit 1
+          fi
+
+      - name: Reject server runtime paths
+        shell: bash
+        run: |
+          set -euo pipefail
+          bad="$(git ls-files | grep -E '^(Mods/|Data/|7DaysToDieServer_Data/|steamapps/|serverconfig\.xml$|platform\.cfg$|output_log)' || true)"
+          if [[ -n "$bad" ]]; then
+            echo 'Server runtime files are tracked:'
+            echo "$bad"
+            exit 1
+          fi
+
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

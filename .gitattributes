@@ -1,0 +1,26 @@
+* text=auto eol=lf
+
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+*.dll binary
+*.ico binary
+*.jpg binary
+*.mp4 binary
+*.otf binary
+*.pdb binary
+*.png binary
+*.ttf binary
+*.webm binary
+*.woff2 binary
+*.zip binary
+
+mod-src/**/vendor/** linguist-vendored=true
+mod-src/TFP_Harmony/mod/** linguist-vendored=true
+mod-src/TFP_CommandExtensions/mod/** linguist-vendored=true
+mod-src/Xample_MarkersMod/mod/** linguist-vendored=true
+mod-src/VanillaPlus/src/original/** linguist-vendored=true
+mod-src/DS_SpellMastery/research/** linguist-vendored=true
+mod-src/DS_LogSpikes/mod/Config/** linguist-generated=true
+mod-src/DS_WeaponMastery/server/Config/** linguist-generated=true

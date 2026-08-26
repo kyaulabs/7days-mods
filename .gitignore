@@ -1,0 +1,55 @@
+# This repository lives inside a 7 Days to Die dedicated-server installation.
+# Deny everything at the server root, then allow only repository metadata and
+# the canonical mod source tree. This prevents new game/runtime files from being
+# accidentally added after server updates.
+/*
+!/.github/
+!/.github/**
+!/.gitattributes
+!/.gitignore
+!/CODE_OF_CONDUCT.md
+!/CONTRIBUTING.md
+!/LICENSE
+!/README.md
+!/SECURITY.md
+!/THIRD_PARTY_NOTICES.md
+!/cliff.toml
+!/commitlint.config.js
+!/mod-src/
+!/mod-src/**
+
+# Production-only deployment topology and operations
+/mod-src/DEPLOY.md
+/mod-src/deploy.py
+
+# IDE, compiler, package-manager and Python outputs
+**/.vs/
+**/.idea/
+**/.vscode/
+**/bin/
+**/obj/
+**/__pycache__/
+**/*.py[cod]
+**/*.user
+**/*.suo
+**/*.cache
+**/*.tmp
+**/*.log
+
+# Compiled/deployable mod artifacts and packages
+**/*.dll
+**/*.pdb
+**/*.zip
+**/DSResetDone.txt
+/mod-src/DS_WaterDouse/client/
+/mod-src/DS_WeaponMastery/client/
+/mod-src/KYAU_Dashboard/webroot/downloads/
+/mod-src/KYAU_Dashboard/webroot/assets/mods.json
+
+# Essential upstream/binary-only inputs retained for provenance/reproduction
+!/mod-src/TFP_Harmony/mod/*.dll
+!/mod-src/TFP_Harmony/mod/*.pdb
+!/mod-src/TFP_CommandExtensions/mod/*.dll
+!/mod-src/Xample_MarkersMod/mod/*.dll
+!/mod-src/DS_VehicleCruiseControl/vendor/**/*.dll
+!/mod-src/VanillaPlus/src/original/*.dll
