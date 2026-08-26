@@ -1,0 +1,14 @@
+<config>
+	<append xpath="/recipes">
+		<recipe name="TMO_WoodenLogSpikeS1" count="1" craft_area="workbench" craft_time="2">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="TMO_ScrapIronLogSpikeS4" count="1" craft_area="workbench" craft_time="18">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceScrapIron" count="60"/>
+		</recipe>
+		<recipe name="TMO_SteelLogSpikeS6" count="1" craft_area="workbench" craft_time="25">
+			<ingredient name="resourceForgedSteel" count="10"/>
+		</recipe>
+	</append>
+</config>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/recipes">
+		<recipe name="DS_WoodLogSpike" count="1" tags="packMuleCrafting">
+			<ingredient name="resourceWood" count="30"/>
+		</recipe>
+		<recipe name="DS_WoodLogSpikeReinforced" count="1" tags="packMuleCrafting">
+			<ingredient name="resourceWood" count="45"/>
+		</recipe>
+		<recipe name="DS_WoodLogSpikeWoodMetal" count="1" tags="packMuleCrafting">
+			<ingredient name="resourceWood" count="30"/>
+			<ingredient name="resourceForgedIron" count="2"/>
+		</recipe>
+		<recipe name="DS_ScrapIronLogSpike" count="1" tags="packMuleCrafting">
+			<ingredient name="resourceForgedIron" count="6"/>
+		</recipe>
+		<recipe name="DS_ScrapIronLogSpikeReinforced" count="1" tags="packMuleCrafting">
+			<ingredient name="resourceForgedIron" count="8"/>
+		</recipe>
+		<recipe name="DS_SteelLogSpike" count="1" tags="packMuleCrafting">
+			<ingredient name="resourceForgedSteel" count="5"/>
+		</recipe>
+	</append>
+</configs>

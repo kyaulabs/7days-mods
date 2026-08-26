@@ -1,0 +1,13 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,KeepLoaded,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+DS_WoodLogSpike,blocks,Trap,,,,Wooden Log Spike,,,,,,,,,,,,,
+DS_WoodLogSpikeDesc,blocks,Trap,,,,A simple sharpened log spike. Cheap, effective, and great for early defenses.,,,,,,,,,,,,,
+DS_WoodLogSpikeReinforced,blocks,Trap,,,,Reinforced Wood Log Spike,,,,,,,,,,,,,
+DS_WoodLogSpikeReinforcedDesc,blocks,Trap,,,,A sturdier wooden spike strengthened with extra supports to last longer.,,,,,,,,,,,,,
+DS_WoodLogSpikeWoodMetal,blocks,Trap,,,,Reinforced Metal Wood Log Spike,,,,,,,,,,,,,
+DS_WoodLogSpikeWoodMetalDesc,blocks,Trap,,,,Wooden core wrapped in metal bracing for tougher durability and extra bite.,,,,,,,,,,,,,
+DS_ScrapIronLogSpike,blocks,Trap,,,,Scrap Iron Log Spike,,,,,,,,,,,,,
+DS_ScrapIronLogSpikeDesc,blocks,Trap,,,,A heavy scrap-iron spike forged from salvaged metal, ideal for mid-game traps.,,,,,,,,,,,,,
+DS_ScrapIronLogSpikeReinforced,blocks,Trap,,,,Reinforced Scrap Iron Log Spike,,,,,,,,,,,,,
+DS_ScrapIronLogSpikeReinforcedDesc,blocks,Trap,,,,Thicker, reinforced scrap-iron construction that thrives under sustained horde pressure.,,,,,,,,,,,,,
+DS_SteelLogSpike,blocks,Trap,,,,Steel Log Spike,,,,,,,,,,,,,
+DS_SteelLogSpikeDesc,blocks,Trap,,,,High-grade steel spike engineered for maximum damage and extreme longevity.,,,,,,,,,,,,,

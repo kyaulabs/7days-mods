@@ -1,0 +1,18 @@
+Key,File,English
+TMO_WoodenLogSpikeS1,Item,"Wooden Log Spike"
+TMO_WoodenLogSpikeS1Desc,Item,"A simple sharpened log spike. Cheap, effective, and great for early defenses."
+
+TMO_WoodenLogSpikeS2,Item,"Reinforced Wood Log Spike"
+TMO_WoodenLogSpikeS2Desc,Item,"A sturdier wooden spike strengthened with extra supports to last longer."
+
+TMO_WoodenMetalLogSpikeS3,Item,"Reinforced Metal Wood Log Spike"
+TMO_WoodenMetalLogSpikeS3Desc,Item,"Wooden core wrapped in metal bracing for tougher durability and extra bite."
+
+TMO_ScrapIronLogSpikeS4,Item,"Scrap Iron Spike"
+TMO_ScrapIronLogSpikeS4Desc,Item,"A heavy scrap-iron spike forged from salvaged metal, ideal for mid-game traps."
+
+TMO_ScrapIronLogSpikeS5,Item,"Reinforced Scrap Iron Spike"
+TMO_ScrapIronLogSpikeS5Desc,Item,"Thicker, reinforced scrap-iron construction that thrives under sustained horde pressure."
+
+TMO_SteelLogSpikeS6,Item,"Steel Spike"
+TMO_SteelLogSpikeS6Desc,Item,"High-grade steel spike engineered for maximum damage and extreme longevity."

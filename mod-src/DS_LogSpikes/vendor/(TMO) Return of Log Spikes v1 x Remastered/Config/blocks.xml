@@ -1,0 +1,164 @@
+<config>
+	<append xpath="/blocks">
+		<!-- LOG SPIKE TIER 1: BASIC WOOD SPIKE -->
+		<block name="TMO_WoodenLogSpikeS1">
+			<property name="SellableToTrader" value="false"/>
+
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="shapeCone1m"/>
+			<property name="CustomIconTint" value="A0522D"/>
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+			<property name="Damage" value="3"/>
+			<property name="Damage_received" value="7"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="@:Shapes/cone1m.fbx"/>
+			<property name="Texture" value="21,21,22,22,22,22"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="10"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="FuelValue" value="300"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="TMO_WoodenLogSpikeS2"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomUpgradeSound" value="place_block_wood"/>
+			<drop event="Destroy" name="resourceWood" count="2,6"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="EconomicValue" value="30"/>
+			<property name="EconomicBundleSize" value="20"/>
+			<property name="FilterTags" value="fdecor,ftraps"/>
+			<property name="SortOrder1" value="70g0"/>
+		</block>
+		<!-- LOG SPIKE TIER 2: REINFORCED WOOD -->
+		<block name="TMO_WoodenLogSpikeS2">
+			<property name="SellableToTrader" value="false"/>
+
+			<property name="Extends" value="TMO_WoodenLogSpikeS1"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="shapeCone1m"/>
+			<property name="CustomIconTint" value="B87333"/>
+			<property name="Damage" value="4"/>
+			<property name="Damage_received" value="7"/>
+			<property name="Texture" value="379"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="119"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="TMO_WoodenMetalLogSpikeS3"/>
+				<property name="Item" value="resourceScrapIron"/>
+				<property name="ItemCount" value="20"/>
+			</property>
+			<property name="CustomUpgradeSound" value="place_block_metal"/>
+			<property name="DowngradeBlock" value="TMO_WoodenLogSpikeS1"/>
+			<property name="EconomicValue" value="0"/>
+		</block>
+		<!-- LOG SPIKE TIER 3: WOOD AND METAL -->
+		<block name="TMO_WoodenMetalLogSpikeS3">
+			<property name="Extends" value="TMO_WoodenLogSpikeS2" param1="RepairItems"/>
+				<property name="SellableToTrader" value="false"/>
+
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="shapeCone1m"/>
+			<property name="CustomIconTint" value="8B4513"/>
+			<property name="Damage" value="5"/>
+			<property name="Damage_received" value="10"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Texture" value="380"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="120"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="20"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="TMO_ScrapIronLogSpikeS4"/>
+				<property name="ItemCount" value="40"/>
+			</property>
+			<property name="DowngradeBlock" value="TMO_WoodenLogSpikeS2"/>
+			<drop event="Destroy" name="resourceWood" count="0"/>
+			<drop event="Destroy" name="resourceScrapIron" count="8"/>
+		</block>
+		<!-- LOG SPIKE TIER 4: SCRAP IRON -->
+		<block name="TMO_ScrapIronLogSpikeS4">
+			<property name="Extends" value="TMO_WoodenLogSpikeS2" param1="DowngradeBlock,RepairItems"/>
+				<property name="SellableToTrader" value="false"/>
+
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="shapeCone1m"/>
+			<property name="CustomIconTint" value="B0C4DE"/>
+			<property name="Damage" value="6"/>
+			<property name="Damage_received" value="9"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Texture" value="307"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="87"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="40"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="TMO_ScrapIronLogSpikeS5"/>
+				<property name="ItemCount" value="40"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="0"/>
+			<drop event="Destroy" name="resourceScrapIron" count="15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		</block>
+		<!-- LOG SPIKE TIER 5: REINFORCED SCRAP IRON -->
+		<block name="TMO_ScrapIronLogSpikeS5">
+			<property name="Extends" value="TMO_ScrapIronLogSpikeS4"/>
+				<property name="SellableToTrader" value="false"/>
+
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="shapeCone1m"/>
+			<property name="CustomIconTint" value="DAA520"/>
+			<property name="Damage" value="7"/>
+			<property name="Damage_received" value="10"/>
+			<property name="Texture" value="352"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="110"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="TMO_SteelLogSpikeS6"/>
+				<property name="Item" value="resourceForgedSteel"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="DowngradeBlock" value="TMO_ScrapIronLogSpikeS4"/>
+		</block>
+		<!-- LOG SPIKE TIER 6: STEEL -->
+		<block name="TMO_SteelLogSpikeS6">
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+			<property name="CustomIcon" value="shapeCone1m"/>
+			<property name="CustomIconTint" value="C0C0C0"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Damage" value="7"/>
+			<property name="Damage_received" value="40"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="@:Shapes/cone1m.fbx"/>
+			<property name="Texture" value="356,355,356,356,356,356"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="112"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="10"/>
+			</property>
+			<property name="CustomUpgradeSound" value="place_block_metal"/>
+			<property name="DowngradeBlock" value="TMO_ScrapIronLogSpikeS5"/>
+			<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="FilterTags" value="fdecor,ftraps"/>
+			<property name="SortOrder1" value="70g0"/>
+		</block>
+	</append>
+</config>

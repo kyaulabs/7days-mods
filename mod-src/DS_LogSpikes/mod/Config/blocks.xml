@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/blocks">
+		<!-- DS_WoodLogSpike - Wooden Log Spike -->
+		<block name="DS_WoodLogSpike">
+			<property name="SellableToTrader" value="false"/>
+			<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="shapeCone1m" />
+		<property name="CustomIconTint" value="A0522D" />
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+		<property name="Damage" value="40" />
+		<property name="Damage_received" value="33" />
+		<property name="Material" value="MtrapSpikesWood" />
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="Path" value="solid"/>
+		<property name="Model" value="@:Shapes/cone1m.fbx" />
+		<property name="Texture" value="21,21,22,22,22,22" />
+			<property name="UseGlobalUV" value="Local"/>
+		<property name="FuelValue" value="300" />
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="DS_WoodLogSpikeReinforced"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		<property name="UpgradeSound" value="place_block_wood" />
+			<drop event="Destroy" name="resourceWood" count="2,6"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Tools/Traps" />
+		<property name="EconomicValue" value="30" />
+		<property name="EconomicBundleSize" value="20" />
+		<property name="FilterTags" value="MC_building,SC_traps" />
+		<property name="SortOrder1" value="B760" />
+		<property name="SortOrder2" value="0000" />
+		</block>
+		<!-- DS_WoodLogSpikeReinforced - Reinforced Wood Log Spike -->
+		<block name="DS_WoodLogSpikeReinforced">
+			<property name="SellableToTrader" value="false"/>
+			<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="shapeCone1m" />
+		<property name="CustomIconTint" value="B87333" />
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+		<property name="Damage" value="45" />
+		<property name="Damage_received" value="33" />
+		<property name="Material" value="MtrapSpikesWood" />
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="Path" value="solid"/>
+		<property name="Model" value="@:Shapes/cone1m.fbx" />
+		<property name="Texture" value="379" />
+			<property name="UseGlobalUV" value="Local"/>
+		<property name="FuelValue" value="300" />
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+				<property name="resourceForgedIron" value="1"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="DS_WoodLogSpikeWoodMetal"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="15"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		<property name="UpgradeSound" value="place_block_wood" />
+		<property name="DowngradeBlock" value="DS_WoodLogSpike" />
+			<drop event="Destroy" name="resourceWood" count="2,6"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Tools/Traps" />
+		<property name="EconomicValue" value="0" />
+		<property name="FilterTags" value="MC_building,SC_traps" />
+		<property name="SortOrder1" value="B760" />
+		<property name="SortOrder2" value="0001" />
+		</block>
+		<!-- DS_WoodLogSpikeWoodMetal - Reinforced Metal Wood Log Spike -->
+		<block name="DS_WoodLogSpikeWoodMetal">
+			<property name="SellableToTrader" value="false"/>
+			<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="shapeCone1m" />
+		<property name="CustomIconTint" value="8B4513" />
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+		<property name="Damage" value="50" />
+		<property name="Damage_received" value="33" />
+			<property name="DisplayType" value="blockHardened"/>
+		<property name="Material" value="MtrapSpikesIron" />
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="Path" value="solid"/>
+		<property name="Model" value="@:Shapes/cone1m.fbx" />
+		<property name="Texture" value="380" />
+			<property name="UseGlobalUV" value="Local"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+				<property name="resourceForgedIron" value="2"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="DS_ScrapIronLogSpike"/>
+				<property name="Item" value="resourceForgedIron"/>
+				<property name="ItemCount" value="3"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		<property name="UpgradeSound" value="place_block_metal" />
+		<property name="DowngradeBlock" value="DS_WoodLogSpikeReinforced" />
+			<drop event="Destroy" name="resourceWood" count="0"/>
+			<drop event="Destroy" name="resourceScrapIron" count="8"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Tools/Traps" />
+		<property name="EconomicValue" value="0" />
+		<property name="FilterTags" value="MC_building,SC_traps" />
+		<property name="SortOrder1" value="B760" />
+		<property name="SortOrder2" value="0002" />
+		</block>
+		<!-- DS_ScrapIronLogSpike - Scrap Iron Log Spike -->
+		<block name="DS_ScrapIronLogSpike">
+			<property name="SellableToTrader" value="false"/>
+			<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="shapeCone1m" />
+		<property name="CustomIconTint" value="B0C4DE" />
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+		<property name="Damage" value="55" />
+		<property name="Damage_received" value="33" />
+			<property name="DisplayType" value="blockHardened"/>
+		<property name="Material" value="MtrapSpikesIron" />
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="Path" value="solid"/>
+		<property name="Model" value="@:Shapes/cone1m.fbx" />
+		<property name="Texture" value="307" />
+			<property name="UseGlobalUV" value="Local"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="3"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="DS_ScrapIronLogSpikeReinforced"/>
+				<property name="Item" value="resourceForgedIron"/>
+				<property name="ItemCount" value="5"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		<property name="UpgradeSound" value="place_block_metal" />
+		<property name="DowngradeBlock" value="DS_WoodLogSpikeWoodMetal" />
+			<drop event="Destroy" name="resourceWood" count="0"/>
+			<drop event="Destroy" name="resourceScrapIron" count="15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Tools/Traps" />
+		<property name="EconomicValue" value="0" />
+		<property name="FilterTags" value="MC_building,SC_traps" />
+		<property name="SortOrder1" value="B760" />
+		<property name="SortOrder2" value="0003" />
+		</block>
+		<!-- DS_ScrapIronLogSpikeReinforced - Reinforced Scrap Iron Log Spike -->
+		<block name="DS_ScrapIronLogSpikeReinforced">
+			<property name="SellableToTrader" value="false"/>
+			<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="shapeCone1m" />
+		<property name="CustomIconTint" value="DAA520" />
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+		<property name="Damage" value="62" />
+		<property name="Damage_received" value="33" />
+			<property name="DisplayType" value="blockHardened"/>
+		<property name="Material" value="MtrapSpikesIron" />
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="Path" value="solid"/>
+		<property name="Model" value="@:Shapes/cone1m.fbx" />
+		<property name="Texture" value="352" />
+			<property name="UseGlobalUV" value="Local"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="DS_SteelLogSpike"/>
+				<property name="Item" value="resourceForgedSteel"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		<property name="UpgradeSound" value="place_block_metal" />
+		<property name="DowngradeBlock" value="DS_ScrapIronLogSpike" />
+			<drop event="Destroy" name="resourceWood" count="0"/>
+			<drop event="Destroy" name="resourceScrapIron" count="15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Tools/Traps" />
+		<property name="EconomicValue" value="0" />
+		<property name="FilterTags" value="MC_building,SC_traps" />
+		<property name="SortOrder1" value="B760" />
+		<property name="SortOrder2" value="0004" />
+		</block>
+		<!-- DS_SteelLogSpike - Steel Log Spike -->
+		<block name="DS_SteelLogSpike">
+			<property name="SellableToTrader" value="false"/>
+			<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="shapeCone1m" />
+		<property name="CustomIconTint" value="C0C0C0" />
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+		<property name="Damage" value="75" />
+		<property name="Damage_received" value="33" />
+			<property name="DisplayType" value="blockHardened"/>
+		<property name="Material" value="Msteel" />
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="Path" value="solid"/>
+		<property name="Model" value="@:Shapes/cone1m.fbx" />
+		<property name="Texture" value="356,355,356,356,356,356" />
+			<property name="UseGlobalUV" value="Local"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="2"/>
+			</property>
+		<property name="UpgradeSound" value="place_block_metal" />
+		<property name="DowngradeBlock" value="DS_ScrapIronLogSpikeReinforced" />
+			<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Tools/Traps" />
+		<property name="EconomicValue" value="0" />
+		<property name="FilterTags" value="MC_building,SC_traps" />
+		<property name="SortOrder1" value="B760" />
+		<property name="SortOrder2" value="0005" />
+		</block>
+	</append>
+</configs>
