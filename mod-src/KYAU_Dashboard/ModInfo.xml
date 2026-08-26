@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="ZZ_KYAU_Dashboard"/>
+	<DisplayName value="AfterHours Web Dashboard"/>
+	<Description value="Full webroot replacement: public AfterHours community website (live status, fog-of-war map, mod list, client modpack download). Replaces the stock web dashboard. Server-side only."/>
+	<Author value="Kyau"/>
+	<Version value="1.5.0"/>
+	<Website value="https://7days.kyaulabs.com"/>
+</xml>

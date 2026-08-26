@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AfterHours — 7 Days to Die Server by KYAU Labs</title>
+<meta name="description" content="AfterHours — a PVE 7 Days to Die server where survival never sleeps. Custom mods, live map, and a friendly community. By KYAU Labs.">
+<meta name="theme-color" content="#070d0b">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/files/assets/afterhours-icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/files/assets/afterhours-icon.png">
+<link rel="stylesheet" href="/files/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="/files/assets/app.css">
+</head>
+<body>
+
+<!-- Fixed video backdrop -->
+<div class="backdrop" aria-hidden="true">
+  <video id="bgVideo" autoplay muted loop playsinline preload="metadata"
+         poster="/files/assets/menu-poster.jpg" disablepictureinpicture>
+    <source src="/files/assets/menu-bg.webm" type="video/webm">
+    <source src="/files/assets/menu-bg.mp4" type="video/mp4">
+  </video>
+  <div class="backdrop-scrim"></div>
+  <div class="backdrop-dots"></div>
+</div>
+
+<!-- Nav -->
+<header class="nav">
+  <a class="nav-brand" href="#top">
+    <img src="/files/assets/afterhours-icon.png" alt="" class="nav-icon">
+  </a>
+  <nav class="nav-links">
+    <a href="#map">Map</a>
+    <a href="#mods">Mods</a>
+    <a href="#download">Download</a>
+    <a href="https://discord.gg/DSvUNYm" target="_blank" rel="noopener">Discord</a>
+  </nav>
+  <div class="nav-status" id="navStatus" title="Server status">
+    <span class="pulse-dot" id="navDot"></span><span id="navStatusText">CONNECTING</span>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Modpack update notice (shown by app.js when the pack changed since your last visit) -->
+  <div class="pack-banner" id="packBanner" hidden>
+    <div class="pack-banner-inner">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pack-banner-icon"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <p class="pack-banner-text">THE CLIENT MODPACK WAS UPDATED — <b id="packBannerVersion"></b> <span id="packBannerDate"></span>. Grab the new pack before you play; an old pack breaks crafting/quality display and can get you kicked.</p>
+      <a class="btn btn-ember pack-banner-btn" href="#download" id="packBannerBtn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>GET THE PACK</span>
+      </a>
+      <button class="pack-banner-close" id="packBannerClose" title="Dismiss" aria-label="Dismiss">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <p class="hero-kicker">A 7 DAYS TO DIE PVE SERVER &nbsp;·&nbsp; BY KYAU LABS</p>
+    <h1 class="hero-title"><img src="/files/assets/afterhours-logo-hero.png" alt="AfterHours" class="hero-logo"></h1>
+    <p class="hero-tag">Survival never sleeps.</p>
+
+    <button class="addr-chip" id="addrChip" title="Click to copy server address">
+      <span class="addr-label">SERVER ADDRESS</span>
+      <span class="addr-row">
+        <span class="addr-value" id="addrValue">helios.kyaulabs.com:26900</span>
+        <svg class="addr-copy" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      </span>
+    </button>
+
+    <div class="hero-ctas">
+      <a class="btn btn-ember" href="#download">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>GET THE MODPACK</span>
+      </a>
+      <a class="btn btn-ghost" href="https://discord.gg/DSvUNYm" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.32 4.37a19.8 19.8 0 0 0-4.93-1.51 13.8 13.8 0 0 0-.64 1.28 18.3 18.3 0 0 0-5.5 0 13.8 13.8 0 0 0-.64-1.28c-1.71.29-3.37.8-4.93 1.51A20.3 20.3 0 0 0 .1 18.06a19.9 19.9 0 0 0 6.07 3.03c.49-.66.93-1.37 1.3-2.1a12.9 12.9 0 0 1-2.05-.98c.17-.12.34-.25.5-.38a14.2 14.2 0 0 0 12.16 0c.16.13.33.26.5.38-.65.38-1.34.71-2.05.98.37.73.81 1.44 1.3 2.1a19.9 19.9 0 0 0 6.07-3.03 20.3 20.3 0 0 0-3.58-13.69ZM8.02 15.33c-1.18 0-2.16-1.08-2.16-2.42s.95-2.42 2.16-2.42 2.18 1.09 2.16 2.42c0 1.34-.95 2.42-2.16 2.42Zm7.96 0c-1.18 0-2.16-1.08-2.16-2.42s.95-2.42 2.16-2.42 2.18 1.09 2.16 2.42c0 1.34-.95 2.42-2.16 2.42Z"/></svg>
+        <span>JOIN DISCORD</span>
+      </a>
+    </div>
+
+    <div class="hero-stats" id="heroStats">
+      <div class="hstat"><span class="hstat-num" id="statPlayers">–</span><span class="hstat-label">SURVIVORS ONLINE</span></div>
+      <div class="hstat"><span class="hstat-num" id="statDay">–</span><span class="hstat-label">DAY</span></div>
+      <div class="hstat"><span class="hstat-num" id="statClock">–</span><span class="hstat-label">SERVER TIME</span></div>
+      <div class="hstat hstat-bm"><span class="hstat-num" id="statBloodmoon">–</span><span class="hstat-label">BLOOD MOON</span></div>
+    </div>
+  </section>
+
+  <!-- Live status -->
+  <section class="section" id="status">
+    <h2 class="section-title"><span>SERVER STATUS</span></h2>
+    <div class="status-grid">
+      <div class="panel players-panel">
+        <h3 class="panel-title">SURVIVORS ONLINE <span class="panel-title-num" id="playersCount">0/8</span></h3>
+        <div class="players-list" id="playersList">
+          <p class="players-empty" id="playersEmpty">The wasteland is quiet… nobody is online right now.</p>
+        </div>
+      </div>
+      <div class="status-side">
+        <div class="panel mini">
+          <h3 class="panel-title">WORLD</h3>
+          <p class="mini-big" id="worldName">AH42</p>
+          <p class="mini-sub" id="worldSub">Custom world · PVE</p>
+        </div>
+        <div class="panel mini">
+          <h3 class="panel-title">THE HUNT</h3>
+          <p class="mini-big"><span id="statHostiles">–</span> <span class="mini-unit">hostiles</span></p>
+          <p class="mini-sub"><span id="statAnimals">–</span> animals roaming</p>
+        </div>
+        <div class="panel mini panel-bm" id="bmPanel">
+          <h3 class="panel-title">BLOOD MOON</h3>
+          <p class="mini-big" id="bmBig">–</p>
+          <p class="mini-sub" id="bmSub">–</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section" id="map">
+    <h2 class="section-title"><span>LIVE MAP</span></h2>
+    <p class="section-sub">Terrain reveals itself as survivors explore — same rules as in-game. Amber pings are players online now; red dots are active zombies.</p>
+    <div class="map-frame">
+      <div id="mapEl"></div>
+      <div class="map-compass" aria-hidden="true" title="North is up">
+        <svg viewBox="0 0 80 80">
+          <circle cx="40" cy="40" r="37" class="cmp-ring"/>
+          <text x="40" y="16.5" class="cmp-label cmp-label-n" text-anchor="middle">N</text>
+          <text x="66" y="43.5" class="cmp-label" text-anchor="middle">E</text>
+          <text x="40" y="71" class="cmp-label" text-anchor="middle">S</text>
+          <text x="14" y="43.5" class="cmp-label" text-anchor="middle">W</text>
+          <polygon points="40,21 45,40 35,40" class="cmp-north"/>
+          <polygon points="40,59 45,40 35,40" class="cmp-south"/>
+          <polygon points="59,40 40,35 40,45" class="cmp-south"/>
+          <polygon points="21,40 40,35 40,45" class="cmp-south"/>
+          <circle cx="40" cy="40" r="3" class="cmp-pin"/>
+        </svg>
+      </div>
+      <div class="map-legend" aria-label="Map layers">
+        <button type="button" class="map-legend-toggle" data-map-layer="players" aria-controls="mapEl" aria-pressed="true"><i class="lg lg-player"></i> Player</button>
+        <button type="button" class="map-legend-toggle" data-map-layer="traders" aria-controls="mapEl" aria-pressed="true"><i class="lg lg-trader"></i> Trader</button>
+        <button type="button" class="map-legend-toggle" data-map-layer="zombies" aria-controls="mapEl" aria-pressed="true"><i class="lg lg-zombie"></i> Zombie</button>
+        <span class="map-legend-static"><i class="lg lg-fog"></i> Unexplored</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mods -->
+  <section class="section" id="mods">
+    <h2 class="section-title"><span>THE MODS</span></h2>
+    <p class="section-sub">A hand-built mod stack you won't find on any other server — custom code written for AfterHours, plus a few quality-of-life picks.</p>
+    <div class="mods-grid" id="modsGrid"></div>
+  </section>
+
+  <!-- Download -->
+  <section class="section" id="download">
+    <h2 class="section-title"><span>GET PLAYING</span></h2>
+    <div class="dl-grid">
+      <div class="panel dl-panel">
+        <h3 class="panel-title">CLIENT MODPACK</h3>
+        <p class="dl-text">One ZIP with every client-side mod you need. Drop it in your game folder and you're ready to ride.</p>
+        <a class="btn btn-ember btn-big" href="/files/downloads/AfterHours_ClientMods.zip" download>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>DOWNLOAD MODPACK</span> <span class="btn-sub" id="zipSize"></span>
+        </a>
+        <p class="dl-meta" id="packMeta">PACK <b id="packVersion">v?</b> · UPDATED <b id="packUpdated">?</b></p>
+        <div class="dl-contents" id="packContents" title="What's inside the pack"></div>
+        <p class="dl-note">Plain .ZIP — no weird formats.<br/>Works with the Steam version of 7 Days to Die V3.x.<br/>If the pack updated since your last visit, re-extract it before playing.</p>
+      </div>
+      <div class="panel steps-panel">
+        <h3 class="panel-title">INSTALL IN 4 STEPS</h3>
+        <ol class="steps">
+          <li><b>Download</b> the modpack and unzip it.</li>
+          <li>Copy the <b>Mods</b> folder into your 7 Days to Die user folder<br><code>%AppData%\7DaysToDie\</code></li>
+          <li><b>Disable EAC:</b> in the Steam launch options choose <i>"Show game launcher"</i> → uncheck <i>"Use EasyAntiCheat"</i>. Required for mod DLLs.</li>
+          <li>Launch the game → <b>Join Game</b> → find <b>AfterHours</b> or connect directly to <code>helios.kyaulabs.com:26900</code></li>
+        </ol>
+        <p class="dl-note dl-note-ember">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          The server is password protected — grab the password in <a href="https://discord.gg/DSvUNYm" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.32 4.37a19.8 19.8 0 0 0-4.93-1.51 13.8 13.8 0 0 0-.64 1.28 18.3 18.3 0 0 0-5.5 0 13.8 13.8 0 0 0-.64-1.28c-1.71.29-3.37.8-4.93 1.51A20.3 20.3 0 0 0 .1 18.06a19.9 19.9 0 0 0 6.07 3.03c.49-.66.93-1.37 1.3-2.1a12.9 12.9 0 0 1-2.05-.98c.17-.12.34-.25.5-.38a14.2 14.2 0 0 0 12.16 0c.16.13.33.26.5.38-.65.38-1.34.71-2.05.98.37.73.81 1.44 1.3 2.1a19.9 19.9 0 0 0 6.07-3.03 20.3 20.3 0 0 0-3.58-13.69ZM8.02 15.33c-1.18 0-2.16-1.08-2.16-2.42s.95-2.42 2.16-2.42 2.18 1.09 2.16 2.42c0 1.34-.95 2.42-2.16 2.42Zm7.96 0c-1.18 0-2.16-1.08-2.16-2.42s.95-2.42 2.16-2.42 2.18 1.09 2.16 2.42c0 1.34-.95 2.42-2.16 2.42Z"/></svg> Discord</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <a href="https://kyaulabs.com" target="_blank" rel="noopener" class="footer-kyau">
+    <img src="/files/assets/kyau-labs-logo.png" alt="KYAU Labs" class="footer-logo">
+  </a>
+  <p class="footer-line">AfterHours is hosted by <a href="https://kyaulabs.com" target="_blank" rel="noopener">KYAU Labs</a> · <a href="https://discord.gg/DSvUNYm" target="_blank" rel="noopener">Discord</a></p>
+  <p class="footer-legal">Not affiliated with The Fun Pimps. 7 Days to Die is a trademark of The Fun Pimps Entertainment LLC.</p>
+</footer>
+
+<script src="/files/vendor/leaflet/leaflet.js"></script>
+<script src="/files/assets/app.js"></script>
+</body>
+</html>
