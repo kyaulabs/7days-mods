@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="1_DS_VehicleCruiseControl"/>
+	<DisplayName value="Vehicle Cruise Control"/>
+	<Version value="3.1.2"/>
+	<Description value="Vehicle cruise control for the AfterHours server (7 Days to Die 3.1). Press Q while riding a vehicle to cycle Off / Slow / Sprint, so you don't have to hold W on long trips. A HUD bar above the fuel bar shows the current mode. Client-side mod: install on every client. Ported for AfterHours from The Winchester by w00kie n00kie."/>
+	<Author value="Kyau (AfterHours); original by w00kie n00kie"/>
+	<Website value="https://7days.kyaulabs.com"/>
+</xml>
