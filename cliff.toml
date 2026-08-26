@@ -2,22 +2,23 @@
 
 [changelog]
 header = """
-# 📜 Changelog\n
-All notable changes to this project are documented here.\
+# 📜 Changelog
+
+All notable changes to this project are documented here.
 See [Conventional Commits](https://conventionalcommits.org) and
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 """
 body = """
-{% if version %}\\
-    ## [{{ version | trim_start_matches(pat="v") }}](https://github.com/kyaulabs/7days-mods/releases/tag/{{ version }}) - {{ timestamp | date(format="%Y-%m-%d") }}
-{% else %}\\
-    ## Unreleased
-{% endif %}\\
+{% if version %}
+## [{{ version | trim_start_matches(pat="v") }}](https://github.com/kyaulabs/7days-mods/releases/tag/{{ version }}) - {{ timestamp | date(format="%Y-%m-%d") }}
+{% else %}
+## Unreleased
+{% endif %}
 {% for group, commits in commits | group_by(attribute="group") %}
-    ### {{ group | upper_first }}
-    {% for commit in commits %}
-        - {% if commit.scope %}**{{ commit.scope }}:** {% endif %}{{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/kyaulabs/7days-mods/commit/{{ commit.id }}))
-    {% endfor %}
+### {{ group | upper_first }}
+{% for commit in commits %}
+- {% if commit.scope %}**{{ commit.scope }}:** {% endif %}{{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/kyaulabs/7days-mods/commit/{{ commit.id }}))
+{% endfor %}
 {% endfor %}
 """
 trim = true
