@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!-- Backpack: 45 -> 60 slots (matches the 6x10 grid in the XUi mod) -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']//passive_effect[@name='BagSize']/@value">60</set>
+</configs>

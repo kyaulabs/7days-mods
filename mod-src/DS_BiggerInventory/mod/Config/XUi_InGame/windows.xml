@@ -1,0 +1,22 @@
+<configs>
+	<!-- ===================== Backpack: 45 slots (5x9) -> 60 slots (6x10) ===================== -->
+	<set xpath="/windows/window[@name='windowBackpack']/@width">673</set>
+	<set xpath="/windows/window[@name='windowBackpack']/@height">416</set>
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/@height">370</set>
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/sprite[@name='backgroundMain']/@width">673</set>
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/sprite[@name='backgroundMain']/@height">403</set>
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/grid[@name='inventory']/@rows">6</set>
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/grid[@name='inventory']/@cols">10</set>
+
+	<!-- ===================== Toolbelt: 10 slots -> 15 slots ===================== -->
+	<set xpath="/windows/window[@name='windowToolbelt']/@width">1130</set>
+	<set xpath="/windows/window[@name='windowToolbelt']/@pos">-565, 84</set>
+	<set xpath="/windows/window[@name='windowToolbelt']/rect/rect[@controller='Toolbelt']/grid[@name='inventory']/@cols">15</set>
+
+	<!-- The vanilla HUD keeps a hidden 2nd toolbelt row (grid 'inventory2', visible when
+	     backendSlotCount > controllers/2). With 15 backend slots + this 15-slot grid the
+	     condition flips true and a phantom empty 10-slot row pops up above the toolbelt.
+	     Remove the hidden row + its clear button so only the single 15-slot row shows. -->
+	<remove xpath="/windows/window[@name='windowToolbelt']//grid[@name='inventory2']"/>
+	<remove xpath="/windows/window[@name='windowToolbelt']//button[@name='btnClearInventory2']"/>
+</configs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!-- Death backpack capacity = the playerBackpack loot container: Entity.InitializeBagFromLootList
+	     sizes EntityBackpack.bag from it (and the loot window uses it for the grid).
+	     Vanilla 7,10 = 70 slots fits 45 bag + 10 toolbelt + 12 equipment = 67.
+	     With the enlarged storage (60 bag + 15 toolbelt + 12 equipment = 87) a 70-slot bag
+	     overflows: EntityPlayerLocal.dropBackpack() fills bag -> equipment -> toolbelt in order
+	     and ignores Bag.AddItem()'s false on a full bag, so the LAST items added (toolbelt
+	     slots 14/15) were silently destroyed on death. 9,10 = 90 slots (same as cntDropBag). -->
+	<set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">9,10</set>
+</configs>

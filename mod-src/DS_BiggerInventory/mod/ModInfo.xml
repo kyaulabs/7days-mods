@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="0_DS_BiggerInventory" />
+	<DisplayName value="Bigger Inventory" />
+	<Description value="Real toolbelt (15) and backpack (60) storage. Companion to the BiggerBackpackAndToolbelt UI grids - items in the extra slots now persist in saves and sync over the network. Replaces the UI-only mod." />
+	<Author value="Kyau" />
+	<Version value="1.0.2" />
+    <Website value="https://7days.kyaulabs.com" />
+</xml>
