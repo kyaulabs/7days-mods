@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!-- ============================================================
+	     Vanilla+ / Trader Never Closes N More (TheMeanOneMods)
+	     Adds a "Reset Quests" option to the trader start dialog.
+	     ============================================================ -->
+	<append xpath="/dialogs/dialog[@id='trader']/statement[@id='start']">
+		<response_entry id="resetquests"/>
+	</append>
+</configs>

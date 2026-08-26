@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SupplyManager>
+	<!-- Vanilla+ / Air Drops Plus (from TheMeanOneMods)
+	     ExtraDrops: how many ADDITIONAL supply crates drop from the plane
+	     beyond the normal vanilla crate. 0 = vanilla (1 crate), max 3.
+	     2 = three crates total per drop. -->
+	<ExtraDrops>2</ExtraDrops>
+</SupplyManager>

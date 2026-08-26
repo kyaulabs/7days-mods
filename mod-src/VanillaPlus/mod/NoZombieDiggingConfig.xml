@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- Vanilla+ / Zombies Can't Dig (from TheMeanOneMods)
+	     WhitelistDigging=true: only zombies listed in AllowList may dig.
+	     Leave AllowList empty to stop ALL zombies from digging. -->
+	<property name="WhitelistDigging" value="true" />
+	<property name="AllowList" value=" " />
+</config>

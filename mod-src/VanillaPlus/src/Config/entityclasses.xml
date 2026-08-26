@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!-- ============================================================
+	     Vanilla+ / Long Lasting Loot Bags N More (TheMeanOneMods)
+	     Zombies drop loot bags more often, and the bags persist 2h.
+	     (Values: feral .1, wight feral .15, radiated .2,
+	      charged/infernal .15, base templates .05.)
+	     The append ops cover current-version entity classes that
+	     inherit LootDropProb instead of defining their own.
+	     ============================================================ -->
+	<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieTemplate')]/property[@name='LootDropProb']/@value">.05</set>
+	<set xpath="/entity_classes/entity_class[contains(@name, 'Feral')]/property[@name='LootDropProb']/@value">.1</set>
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Feral') and not(property[@name='LootDropProb'])]">
+		<property name="LootDropProb" value=".1"/>
+	</append>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[contains(@name, 'Radiated')]/property[@name='LootDropProb']/@value">.2</set>
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Radiated') and not(property[@name='LootDropProb'])]">
+		<property name="LootDropProb" value=".2"/>
+	</append>
+	<set xpath="/entity_classes/entity_class[contains(@name, 'Charged')]/property[@name='LootDropProb']/@value">.15</set>
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Charged') and not(property[@name='LootDropProb'])]">
+		<property name="LootDropProb" value=".15"/>
+	</append>
+	<set xpath="/entity_classes/entity_class[contains(@name, 'Infernal')]/property[@name='LootDropProb']/@value">.15</set>
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Infernal') and not(property[@name='LootDropProb'])]">
+		<property name="LootDropProb" value=".15"/>
+	</append>
+	<set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">7200</set>
+	<set xpath="/entity_classes/entity_class[starts-with(@name, 'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">7200</set>
+</configs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- Vanilla+ / Supply Crate Guards
+	     When any alive player comes within TriggerDistance meters of a landed
+	     supply crate, a horde of ZombieCount zombies spawns around it (once). -->
+	<property name="TriggerDistance" value="12" />
+	<property name="ZombieCount" value="5" />
+	<property name="EntityGroup" value="ZombiesAll" />
+</config>
