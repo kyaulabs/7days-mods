@@ -43,6 +43,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run Gitleaks
-        uses: docker://ghcr.io/gitleaks/gitleaks:v8.28.0
-        with:
-          args: detect --source=/github/workspace --config=/github/workspace/.gitleaks.toml --redact --no-banner --verbose
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
