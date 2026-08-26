@@ -1,0 +1,11 @@
+title = "AfterHours 7 Days to Die Mods"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Known deployed mod identifier misclassified as a generic API key"
+regexTarget = "secret"
+regexes = [
+  '''^2_KYAU_AfterHoursApi$''',
+]
