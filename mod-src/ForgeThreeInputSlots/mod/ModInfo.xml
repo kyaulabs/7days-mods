@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="ForgeThreeInputSlots"/>
+	<DisplayName value="Forge Three Input Slots"/>
+	<Description value="Adds a third material input slot to the forge (2 -> 3). XML-only UI mod. Install on server and every client."/>
+	<Author value="Kyau"/>
+	<Version value="1.0.0"/>
+</xml>

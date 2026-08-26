@@ -1,0 +1,7 @@
+<configs>
+	<!-- ===================== Forge: 2 input slots -> 3 input slots ===================== -->
+	<set xpath="/windows/window[@name='windowForgeInput']/@height">279</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/sprite[@name='backgroundMain']/@height">228</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content']/@height">228</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content']/grid/@rows">3</set>
+</configs>
