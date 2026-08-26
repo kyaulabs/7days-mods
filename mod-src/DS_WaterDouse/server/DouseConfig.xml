@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+	<!-- Meters of scent radius removed per douse with regular (non-pure) water.
+	     Per-item override: add <property name="DouseSmellMeters" value="N"/> to an
+	     item in Config/items.xml. -->
+	<DefaultMetersRemoved>25</DefaultMetersRemoved>
+	<!-- Hard cap for any single douse. Also the server-side anti-cheat clamp:
+	     a forged package can never remove more than this. -->
+	<MaxMetersRemoved>100</MaxMetersRemoved>
+	<!-- Sound group played when dousing (any sound from sounds.xml). -->
+	<SoundName>bucketpour_concrete</SoundName>
+	<!-- Refund the empty jar when dousing (like the vanilla drink's jar refund).
+	     The douse action skips the item's Eat action, so without this every douse
+	     destroys the jar. Note: the vanilla drink only refunds per the game's
+	     JarRefund sandbox chance (default 60%); the douse refunds unconditionally. -->
+	<RefundEmptyJar>true</RefundEmptyJar>
+	<!-- Log every accepted douse to the server log ([DSDouse] ...). -->
+	<DebugLogging>false</DebugLogging>
+</Config>

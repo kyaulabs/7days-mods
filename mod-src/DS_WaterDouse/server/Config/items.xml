@@ -1,0 +1,18 @@
+<config>
+	<!--
+		Water Douse: mark water items as douseable.
+
+		DouseSmellMeters = meters of scent radius this item removes per douse
+		                   (falls back to DouseConfig.xml DefaultMetersRemoved).
+		DouseSmellFull   = this item washes off ALL scent (pure water).
+	-->
+	<append xpath="/items/item[@name='drinkJarRiverWater']">
+		<property name="DouseSmellMeters" value="25" />
+	</append>
+	<append xpath="/items/item[@name='drinkJarBoiledWater']">
+		<property name="DouseSmellMeters" value="25" />
+	</append>
+	<append xpath="/items/item[@name='drinkJarPureMineralWater']">
+		<property name="DouseSmellFull" value="true" />
+	</append>
+</config>

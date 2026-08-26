@@ -1,0 +1,5 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,KeepLoaded,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+lblContextActionDouse,ui,ItemAction,,,,Douse,,,,,,,,,,,,,
+douseFeedbackFull,ui,Tooltip,,,,You douse yourself with water. Your scent has been completely washed off!,,,,,,,,,,,,,
+douseFeedbackPartial,ui,Tooltip,,,,You douse yourself with water. Your scent is reduced by {0} meters.,,,,,,,,,,,,,
+douseNoScent,ui,Tooltip,,,,You have no scent to wash off right now.,,,,,,,,,,,,,
