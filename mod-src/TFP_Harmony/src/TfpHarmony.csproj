@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>TfpHarmony</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="0Harmony">
+      <HintPath>../../srv/7days/Mods/0_TFP_Harmony/0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="LogLibrary" />
+  </ItemGroup>
+</Project>
