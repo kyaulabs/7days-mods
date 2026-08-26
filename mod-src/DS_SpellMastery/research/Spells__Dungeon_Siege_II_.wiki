@@ -1,0 +1,730 @@
+[[File:Spellbook (DSII).jpg|thumb|Example of a Spellbook screen in {{Dungeon Siege II}}]]
+{{For|2=Spells}}
+
+'''Spells''' in {{Dungeon Siege II}} haven't changed much since the original {{Dungeon Siege}} game. Magic is still divided into two schools: nature and combat. To use your spells, you need a spell book, which now contains:
+* 4 active spells.
+* 2 auto spells (4 in {{Broken World}}). Here you can add only spells to heal and strengthen allies, as well as curse enemies and summon creatures.
+* 4 spares (2 in BW).
+The total number of spells has been reduced, but instead some enchantments have been tiered, allowing the same enchantments to be used later in the game.
+
+Also, due to the addition of passive skills to each [[Classes (Dungeon Siege II)|class]] the effectiveness of the spells themselves has increased - mages can increase their damage and spell speed, increase their overall effectiveness and reduce mana costs. The functions of wizards in the squad have become even more pronounced: [[Nature Mage (Dungeon Siege II)|Nature Mages]] can (in addition to dealing damage) heal, buff and protect the squad, while [[Combat Mage (Dungeon Siege II)|combat]] - weaken and quickly destroy enemies. 
+
+The summoned creatures of the school of nature have a lot of health and fight in close combat, and those of combat magic have good damage and a long-range attack type.
+
+In the {{Broken World}} expansion, the [[Blood Assassin]] and [[Stone Fist]] skill trees added special buff spells that work like normal buffs and allow you to distribute experience between two classes in a ratio of 70/30, where 70 % - melee or ranged combat, 30% - natural or combat magic.
+
+=Classes=
+There are further specializations within each class, and so also in the magic classes. For example, a Nature Mage might specialize in Summoning or Ice Magic, among others, and might therefore be very different in between.
+
+Like the original game, nature magic focuses on hurting your enemy and helping your teammates. You'll find most healing spells and buffs (performace-boosting spells) here. Combat Magic on the other hand is more about hurting and hindering your enemies.
+
+Apart from the Nature and Combat magic classes, the spells themselves are also split into various elements. Some enemies have weaknesses to some elements, while others may be completely immune to it. It's wise to always keep a varied spellbook for such occasions.
+
+Spells are devided in different classes, see below:
+
+* [[Spells (Dungeon Siege II)#Death Spells|<span style="color:#C69030;">'''Death:'''</span>]] Death Magic can be found in the Combat Magic class and attacks the creatures lifeforce.
+* [[Spells (Dungeon Siege II)#Fire Spells|<span style="color:#C69030;">'''Fire:'''</span>]] Fire Magic is also a favourite of Combat Magicians and deals with all things hot and burning. If you like spells that hit a lot of enemies at once, Fire Magic's your class.
+* [[Spells (Dungeon Siege II)#Lightning Spells|<span style="color:#C69030;">'''Lightning:'''</span>]] A Combat Magician casting lots of Lightning spells generally don't do as much damage per hit, but they'll fire faster and cost less mana.
+* [[Spells (Dungeon Siege II)#Curses|<span style="color:#C69030;">'''Curses:'''</span>]] A Combat Magician specialising in cursing will weaken the enemy so that it's easier to kill.
+* [[Spells (Dungeon Siege II)#Offensive Spells|<span style="color:#41AA60;">'''Ice:'''</span>]] A Nature Magician specialising in Ice Magic can summon shards of ice out of thin air to hit the enemy with. Ice magic can also slow enemies down or freeze them instantly.
+* [[Spells (Dungeon Siege II)#Healing Spells|<span style="color:#41AA60;">'''Healing:'''</span>]] A Nature Magicians best friend are their healing spells. Ranging from a quick one time boost, to more hitpoints gradually over time, healing spells will make sure your party members stay alive.
+* [[Spells (Dungeon Siege II)#Summoning Spells|<span style="color:#41AA60;">'''Summoning:'''</span>]] Though both Combat and Nature magicians can summon creatures to aid their cause, Nature Magicians will find themselves much better at it.
+* [[Spells (Dungeon Siege II)#Wrath Spells|<span style="color:#41AA60;">'''Buffing:'''</span>]] Those spells designed to temporarily boost a party member's attributes are called Buffs. A Nature Mage specialising in buffs can help parties win against even the toughest foes.
+{{Clr}}
+
+=Dungeon Siege II=
+==Nature Magic==
+====Embrace Spells====
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Embrace Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:aquaticembrace.jpg]]
+| align="left" style="color:#41AA60;"  |Aquatic Embrace
+| 26
+| Grows with skill level
+| Grows with skill level
+| Adds to mana regeneration rate (rate grows with skill level)
+|-
+| [[File:earthenembrace.jpg]]
+| align="left" style="color:#41AA60;"  |Earthen Embrace
+| 2
+| Grows with skill level
+| Grows with skill level
+| Adds to maximum health (health percentage grows with skill level)
+|-
+| [[File:lifeembrace.jpg]]
+| align="left" style="color:#41AA60;"  | Life Embrace
+| 26
+| Grows with skill level
+| Grows with skill level
+| Gives health steal (health steal amount grows with skill level)
+|-
+| [[File:spiritembrace.jpg]]
+| align="left" style="color:#41AA60;"  | Spirit Embrace
+| 18
+| Grows with skill level
+| Grows with skill level
+| Protects against curses, gives resistance to ice, fire and lightning (resistance amount grows with skill level)
+|-
+| [[File:windembrace.jpg]]
+| align="left" style="color:#41AA60;"  | Wind Embrace
+| 10
+| Grows with skill level
+| Grows with skill level
+| Gives chance to dodge melee and ranged attacks (chance grows with skill level)
+|}
+{{clr}}
+
+===Healing Spells===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Healing Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:heal-1.jpg]]<br>[[File:heal-2.jpg]]<br>[[File:heal-3.jpg]]<br>[[File:heal-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Heal
+| Lesser 1 <br> Standard 24 <br> Greater 45<br> Master 67
+| N/A
+| Grows with intelligence
+| Heals a single character (health restored depends on intelligence)
+|-
+| [[File:healingcascade-1.jpg]]<br>[[File:healingcascade-2.jpg]]<br>[[File:healingcascade-3.jpg]]<br>[[File:healingcascade-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Healing Cascade
+| Lesser  19 <br> Standard 39 <br> Greater 61 <br> Master 85
+| 3 seconds
+| Grows with intelligence
+| Creates a ball of water that heals nearby allies (health restored depends on intelligence)
+|-
+| [[File:healingrain-1.jpg]]<br>[[File:healingrain-2.jpg]]<br>[[File:healingrain-3.jpg]]
+| align="left" style="color:#41AA60;"  | Healing Rain
+| Lesser  12 <br> Standard 29 <br> Greater 50
+| 8 seconds
+| Grows with intelligence
+| Heals nearby allies over time (health restored depends on intelligence)
+|-
+| [[File:nourish-1.jpg]]<br>[[File:nourish-2.jpg]]<br>[[File:nourish-3.jpg]]<br>[[File:nourish-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Nourish
+| Lesser  7 <br> Standard 34 <br> Greater 56 <br> Master 79
+| 6 seconds
+| Grows with intelligence
+| Heals a single character over time (health restored depends on intelligence)
+|-
+| [[File:resurrect-1.jpg]]<br>[[File:resurrect-2.jpg]]<br>[[File:resurrect-3.jpg]]<br>[[File:resurrect-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Resurrect
+| Lesser  4 <br> Standard 25 <br> Greater 45 <br> Master 72
+| N/A
+| Grows with intelligence
+| Returns a single character to life (health restored depends on spell used)
+|-
+|}
+{{clr}}
+
+===Offensive Spells===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Offensive Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:encase-1.jpg]]<br>[[File:encase-2.jpg]]<br>[[File:encase-3.jpg]]<br>[[File:encase-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Encase
+| Lesser 3 <br> Standard 24 <br> Greater 46<br> Master 62
+| N/A
+| Grows with intelligence
+| Damages and slows a single enemy (damage grows with intelligence)
+|-
+| [[File:graspingvine-1.jpg]]<br>[[File:graspingvine-2.jpg]]<br>[[File:graspingvine-3.jpg]]<br>[[File:graspingvine-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Grasping Vine
+| Lesser  34 <br> Standard 53 <br> Greater 71 <br> Master 85
+| 3 seconds
+| Grows with intelligence
+| Damages and immobilizes a single enemy (damage grows with intelligence)
+|-
+| [[File:icebolt-1.jpg]]<br>[[File:icebolt-2.jpg]]<br>[[File:icebolt-3.jpg]]<br>[[File:icebolt-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Icebolt
+| N/A <br> Lesser  14 <br> Standard 31 <br> Greater 59
+| N/A
+| Grows with intelligence
+| Damages a single enemy (damage grows with intelligence)
+|-
+| [[File:iceball-1.jpg]]<br>[[File:iceball-2.jpg]]<br>[[File:iceball-3.jpg]]<br>[[File:iceball-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Iceball
+| Lesser  34 <br> Standard 50 <br> Greater 67 <br> Master 85
+| N/A
+| Grows with intelligence
+| Damages one enemy and splatters others (damage grows with intelligence)
+|-
+| [[File:ripple-1.jpg]]<br>[[File:ripple-2.jpg]]<br>[[File:ripple-3.jpg]]<br>[[File:ripple-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Ripple
+| Lesser  7 <br> Standard 18 <br> Greater 40 <br> Master 65
+| N/A
+| Grows with intelligence
+| Damages enemies around target (damage grows with intelligence)
+|-
+|}
+{{clr}}
+
+===Summoning Spells===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Summoning Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:summonbrackendefender-1.jpg]]<br>[[File:summonbrackendefender-2.jpg]]<br>[[File:summonbrackendefender-3.jpg]]<br>[[File:summonbrackendefender-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Bracken Defender
+| Lesser 4 <br> Standard 14 <br> Greater 28 <br> Master 61
+| 600 seconds
+| Grows with intelligence
+| Summons a bracken defender (life, armor, damage, health regeneration, and damage reflection grow with intelligence)
+|-
+| [[File:summonforestgolem-1.jpg]]<br>[[File:summonforestgolem-2.jpg]]<br>[[File:summonforestgolem-3.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Forest Golem
+| Lesser  51 <br> Standard 71 <br> Greater 86
+| 600 seconds
+| Grows with intelligence
+| Summons a forest golem (life, armor, damage, and damage reflection grow with intelligence)
+|-
+| [[File:summonketril-1.jpg]]<br>[[File:summonketril-2.jpg|link=Special:FilePath/Summonketril-2.jpg]]<br>[[File:summonketril-3.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Ketril
+| Lesser  37 <br> Standard 54 <br> Greater 78
+| 600 seconds
+| Grows with intelligence
+| Summons a ketril (life, armor, and damage grow with intelligence)
+|-
+| [[File:summonlertisk-1.jpg]]<br>[[File:summonlertisk-2.jpg]]<br>[[File:summonlertisk-3.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Lertisk
+| Lesser  31 <br> Standard 44 <br> Greater 64
+| 600 seconds
+| Grows with intelligence
+| Summons a lertisk (life, armor, and damage grow with intelligence)
+|-
+| [[File:summonrhinock-1.jpg]]<br>[[File:summonrhinock-2.jpg]]<br>[[File:summonrhinock-3.jpg]]<br>[[File:summonrhinock-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Rhinock
+| Lesser  11 <br> Standard 24 <br> Greater 47 <br> Master 75
+| 600 seconds
+| Grows with intelligence
+| Summons a rhinock (life, armor, and damage grow with intelligence)
+|-
+| [[File:summonscorpion-1.jpg]]<br>[[File:summonscorpion-2.jpg]]<br>[[File:summonscorpion-3.jpg]]<br>[[File:summonscorpion-4.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Scorpion
+| Lesser  21 <br> Standard 34 <br> Greater 57 <br> Master 82
+| 600 seconds
+| Grows with intelligence
+| Summons a scorpion (life, armor, damage, movement speed, and damage resistance grow with intelligence)
+|-
+|}
+{{clr}}
+
+===Wrath Spells===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Wrath Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:wrathofancestors.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Wrath of Ancestors
+| 38
+| Grows with skill level
+| Grows with skill level
+| Increases power recharge rate (multiplier grows with skill level)
+|-
+| [[File:wrathofice.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Wrath of Ice
+| 22
+| Grows with skill level
+| Grows with skill level
+| Gives 5% chance to freeze enemies for 1 second, adds ice damage to attacks (damage amount grows with skill level)
+|-
+| [[File:wrathofmagic.jpg]]<br>
+| align="left" style="color:#41AA60;"  |Wrath of Magic
+| 14
+| Grows with skill level
+| Grows with skill level
+| Increases magic damage (damage amount grows with skill level)
+|-
+| [[File:wrathofthebear.jpg|link=Special:FilePath/Wrathofthebear.jpg]]<br>
+| align="left" style="color:#41AA60;" |Wrath of the Bear
+| 6
+| Grows with skill level
+| Grows with skill level
+| Adds extra damage to critical hits (damage multiplier grows with skill level)
+|-
+| [[File:wrathofthefallen.jpg|link=Special:FilePath/Wrathofthefallen.jpg]]<br>
+| align="left" style="color:#41AA60;" |Wrath of the Fallen
+| 30
+| Grows with skill level
+| Grows with skill level
+| Reduces armor by 5% but grants damage reflection (reflection amount grows with skill level)
+|-
+|}
+{{clr}}
+
+===Miscellaneous Spells===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Miscellaneous Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:transmute.jpg]]<br>
+| align="left" style="color:#41AA60;" | Transmute
+| 2
+| N/A
+| Grows with skill level
+| Transforms objects on the ground into gold (gold amount grows with skill level)
+|-
+| [[File:summonteleporter.jpg|link=Special:FilePath/Summonteleporter.jpg]]<br>
+| align="left" style="color:#41AA60;" | Summon Teleporter
+| N/A
+| N/A
+| 25
+| Summons a teleporter to the closest town.
+|-
+|}
+{{clr}}
+
+==Combat Magic==
+===Curses===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Curses Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:blind.jpg|link=Special:FilePath/Blind.jpg]]<br>
+| align="left" style="color:#C69030;" |Blind
+| 23
+| Grows with skill level
+| Grows with skill level
+| Reduces accuracy of melee and ranged attacks (reduction amount grows with skill level)
+|-
+| [[File:cripple.jpg]]<br>
+| align="left" style="color:#C69030;" |Cripple
+|38
+| Grows with skill level
+| Grows with skill level
+| Reduces melee and ranged attack speed, and reduces health (reduction amounts grow with skill level)
+|-
+| [[File:decayarmor.jpg|link=Special:FilePath/Decayarmor.jpg]]<br>
+| align="left" style="color:#C69030;" |Decay Armor
+| 8
+| Grows with skill level
+| Grows with skill level
+| Reduces armor (reduction amount grows with skill level)
+|-
+| [[File:dehydrate.jpg]]<br>
+| align="left" style="color:#C69030;" |Dehydrate
+| 3
+| Grows with skill level
+| Grows with skill level
+| Reduces melee damage and increases fire vulnerability (reduction amount and vulnerability grow with skill level)
+|-
+| [[File:drown.jpg|link=Special:FilePath/Drown.jpg]]<br>
+| align="left" style="color:#C69030;" |Drown
+| 18
+| Grows with skill level
+| Grows with skill level
+| Increases vulnerability to ice and lightning, and damages over time (vulneratbility and damage grow with skill level)
+|-
+| [[File:infect.jpg]]<br>
+| align="left" style="color:#C69030;" |Infect
+| 33
+| Grows with skill level
+| Grows with skill level
+| Reduces cast rate, increases death vulnerability, and damages over time (reduction amount, vulnerability, and damage grow with skill level)
+|-
+| [[File:punishingfire.jpg|link=Special:FilePath/Punishingfire.jpg]]<br>
+| align="left" style="color:#C69030;" |Punishing Fire
+| 28
+| Grows with skill level
+| Grows with skill level
+| Increases melee and ranged damage by 10%, inflicts damage on every melee and ranged hit (inflicted damage grows with skill level)
+|-
+| [[File:stealmagic.jpg]]<br>
+| align="left" style="color:#C69030;" |Steal Magic
+| 13
+| Grows with skill level
+| Grows with skill level
+| Reduces damage dealt by spells (reduction amount grows with skill level)
+|-
+|}
+{{clr}}
+
+===Death Spells===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Death Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:gravebeam-1.jpg]]<br>[[File:gravebeam-2.jpg]]<br>[[File:gravebeam-3.jpg]]<br>[[File:gravebeam-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Grave Beam
+| Lesser 3<br> Standard 18<br> Greater 36<br> Master 62
+| N/A
+| Grows with intelligence
+| Damages a single enemy (damage grows with intelligence)
+|-
+| [[File:impale-1.jpg]]<br>[[File:impale-2.jpg]]<br>[[File:impale-3.jpg]]<br>[[File:impale-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Impale
+| Lesser 41<br> Standard 57<br> Greater 75<br> Master 90
+| N/A
+| Grows with intelligence
+| Creates spikes that damage enemies in an area (damage grows with intelligence)
+|-
+| [[File:leechlife-1.jpg|link=Special:FilePath/Leechlife-1.jpg]]<br>[[File:leechlife-2.jpg]]<br>[[File:leechlife-3.jpg]]<br>[[File:leechlife-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Leech Life
+| Lesser 10<br> Standard 22<br> Greater 49<br> Master 72
+| N/A
+| Grows with intelligence
+| Damages and leeches life from a single enemy (damage grows with intelligence, leech amount depends on spell)
+|-
+| [[File:skullspray-1.jpg]]<br>[[File:skullspray-2.jpg|link=Special:FilePath/Skullspray-2.jpg]]<br>[[File:skullspray-3.jpg]]<br>[[File:skullspray-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Skull Spray
+| Lesser 27<br> Standard 45<br> Greater 67<br> Master 84
+| N/A
+| Grows with intelligence
+| Throws three skulls at nearby enemies (skull damage grows with intelligence)
+|-
+| [[File:soullance-1.jpg]]<br>[[File:soullance-2.jpg]]<br>[[File:soullance-3.jpg]]<br>[[File:soullance-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Soul Lance
+| Lesser 14<br> Standard 31<br> Greater 53<br> Master 79
+| N/A
+| Grows with intelligence
+| Damages enemies in a line (damage grows with intelligence)
+|-
+|}
+{{clr}}
+
+===Fire Spells===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Fire Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:embers-1.jpg]]<br>[[File:embers-2.jpg|link=Special:FilePath/Embers-2.jpg]]<br>[[File:embers-3.jpg]]<br>[[File:embers-4.jpg|link=Special:FilePath/Embers-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Embers
+| Lesser 8<br> Standard 25<br> Greater 47<br> Master 75
+| N/A
+| Grows with intelligence
+| Shoots multiple projectiles at a single enemy (damage per projectile grows with intelligence)
+|-
+| [[File:fireball-1.jpg|link=Special:FilePath/Fireball-1.jpg]]<br>[[File:fireball-2.jpg|link=Special:FilePath/Fireball-2.jpg]]<br>[[File:fireball-3.jpg|link=Special:FilePath/Fireball-3.jpg]]<br>[[File:fireball-4.jpg|link=Special:FilePath/Fireball-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Fireball
+| Lesser 34<br> Standard 52<br> Greater 70<br> Master 85
+| N/A
+| Grows with intelligence
+| Damages one enemy and splatters others (damage grows with intelligence)
+|-
+| [[File:firebolt-1.jpg]]<br>[[File:firebolt-2.jpg]]<br>[[File:firebolt-3.jpg|link=Special:FilePath/Firebolt-3.jpg]]<br>[[File:firebolt-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Firebolt
+| N/A<br> Standard 13<br> Greater 30<br> Master 56
+| N/A
+| Grows with intelligence
+| Damages a single enemy (damage grows with intelligence)
+|-
+| [[File:firespray-1.jpg|link=Special:FilePath/Firespray-1.jpg]]<br>[[File:firespray-2.jpg|link=Special:FilePath/Firespray-2.jpg]]<br>[[File:firespray-3.jpg]]<br>[[File:firespray-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Firespray
+| Lesser 4<br> Standard 17<br> Greater 43<br> Master 65
+| N/A
+| Grows with intelligence
+| Shoots out five embers to damage enemies (damage per ember grows with intelligence)
+|-
+| [[File:plasmaglobes-1.jpg]]<br>[[File:plasmaglobes-2.jpg]]<br>[[File:plasmaglobes-3.jpg|link=Special:FilePath/Plasmaglobes-3.jpg]]<br>[[File:plasmaglobes-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Plasma Globes
+| Lesser 21<br> Standard 39<br> Greater 61<br> Master 80
+| N/A
+| Grows with intelligence
+| Releases several plasma balls to damage enemies (damage per ball grows with intelligence)
+|-
+|}
+{{clr}}
+
+===Lightning Spells===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Embrace Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:calllightning-1.jpg]]<br>[[File:calllightning-2.jpg]]<br>[[File:calllightning-3.jpg]]<br>[[File:calllightning-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Call Lightning
+| Lesser 37<br> Standard 55<br> Greater 71<br> Master 87
+| N/A
+| Grows with intelligence
+| Damages up to two enemies (damage grows with intelligence)
+|-
+| [[File:jolt-1.jpg]]<br>[[File:jolt-2.jpg|link=Special:FilePath/Jolt-2.jpg]]<br>[[File:jolt-3.jpg|link=Special:FilePath/Jolt-3.jpg]]<br>[[File:jolt-4.jpg|link=Special:FilePath/Jolt-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Jolt
+| Lesser 1<br> Standard 15<br> Greater 33<br> Master 60
+| N/A
+| Grows with intelligence
+| Damages a single enemy (damage grows with intelligence)
+|-
+| [[File:lightningblast-1.jpg]]<br>[[File:lightningblast-2.jpg|link=Special:FilePath/Lightningblast-2.jpg]]<br>[[File:lightningblast-3.jpg|link=Special:FilePath/Lightningblast-3.jpg]]<br>[[File:lightningblast-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Lightning Blast
+| Lesser 23<br> Standard 42<br> Greater 64<br> Master 82
+| N/A
+| Grows with intelligence
+| Damages enemies in a line (damage grows with intelligence)
+|-
+| [[File:multispark-1.jpg|link=Special:FilePath/Multispark-1.jpg]]<br>[[File:multispark-2.jpg|link=Special:FilePath/Multispark-2.jpg]]<br>[[File:multispark-3.jpg]]<br>[[File:multispark-4.jpg|link=Special:FilePath/Multispark-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Multispark
+| Lesser 6<br> Standard 19<br> Greater 46<br> Master 68
+| N/A
+| Grows with intelligence
+| Creates three sparks to damage nearby enemies (spark damage grows with intelligence)
+|-
+| [[File:staticbolt-1.jpg]]<br>[[File:staticbolt-2.jpg]]<br>[[File:staticbolt-3.jpg]]<br>[[File:staticbolt-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Static Bolt
+| Lesser 11<br> Standard 28<br> Greater 50<br> Master 76
+| N/A
+| Grows with intelligence
+| Damages and slows a single enemy (damage grows with intelligence)
+|-
+|}
+{{clr}}
+
+===Summoning Spells===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Summoning Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:summonmucrimshocker-1.jpg]]<br>[[File:summonmucrimshocker-2.jpg]]<br>[[File:summonmucrimshocker-3.jpg]]<br>[[File:summonmucrimshocker-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Summon Mucrim Shocker
+| Lesser 34<br> Standard 54<br> Greater 74<br> Master 86
+| 600 seconds
+| Grows with intelligence
+| Summons a mucrim shocker (life, armor, and damage grow with intelligence, lightning resistance depends on spell)
+|-
+| [[File:summonstygiantwistedshail-1.jpg]]<br>[[File:summonstygiantwistedshail-2.jpg]]<br>[[File:summonstygiantwistedshail-3.jpg]]<br>[[File:summonstygiantwistedshail-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Summon Stygian Twisted Shail
+| Lesser 19<br> Standard 40<br> Greater 59<br> Master 80
+| 600 seconds
+| Grows with intelligence
+| Summons a stygian twisted shail (life, armor, and damage grow with intelligence, death resistance depends on spell)
+|-
+| [[File:summonthrusk-1.jpg]]<br>[[File:summonthrusk-2.jpg]]<br>[[File:summonthrusk-3.jpg]]<br>[[File:summonthrusk-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Summon Thrusk
+| Lesser 14<br> Standard 29<br> Greater 49<br> Master 69
+| 600 seconds
+| Grows with intelligence
+| Summons a thrusk (life, armor, and damage grow with intelligence, fire resistance depends on spell)
+|-
+| [[File:summontrasak-1.jpg]]<br>[[File:summontrasak-2.jpg]]<br>[[File:summontrasak-3.jpg]]<br>[[File:summontrasak-4.jpg]]<br>
+| align="left" style="color:#C69030;" |Summon Trasak
+| Lesser 9<br> Standard 24<br> Greater 45<br> Master 64
+| 600 seconds
+| Grows with intelligence
+| Summons a trasak (life, armor, and damage grow with intelligence, health steal percentage depends on spell)
+|-
+|}
+{{clr}}
+
+===Miscellaneous Spells===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Miscellaneous Spells
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:corpsetransmutation.jpg]]<br>
+| align="left" style="color:#C69030;" |Corpse Transmutation
+| 25
+| 20 seconds
+| Varies with corpse
+| Converts corpses into armor (armor amount grows with skill level)
+|-
+|}
+{{clr}}
+
+=Broken World=
+==Blood Assassin==
+===Weapon Enhancements===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Weapon Enhancements
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:shadesagility.jpg]]<br>
+| align="left" style="color:#C69030;" |Shade's Agility
+| N/A
+| 300 seconds
+| Grows with intelligence
+| Adds dexterity (dexterity amount grows with level)
+|-
+| [[File:markofrending.jpg]]<br>
+| align="left" style="color:#C69030;" |Mark of Rending
+| 6
+| 300 seconds
+| Grows with intelligence
+| Adds ranged weapon damage, adds to the execute power (damage amount and power benefit grow with level)
+|-
+| [[File:manashot.jpg]]<br>
+| align="left" style="color:#C69030;" |Mana Shot
+| 13
+| 300 seconds
+| Grows with intelligence
+| Adds ranged weapon damage for a mana cost per hit (damage amount and mana cost grow with level)
+|-
+| [[File:markoftheharvest.jpg]]<br>
+| align="left" style="color:#C69030;" |Mark of the Harvest
+| 19
+| 300 seconds
+| Grows with intelligence
+| Adds death damage to ranged attacks, adds to the execute power (damage amount and power benfit grow with level)
+|-
+| [[File:markoffire.jpg]]<br>
+| align="left" style="color:#C69030;" |Mark of Fire
+| 32
+| 300 seconds
+| Grows with intelligence
+| Adds fire damage to ranged attacks, adds to the execute power (damage amount and power benfit grow with level)
+|-
+| [[File:repulsion.jpg]]<br>
+| align="left" style="color:#C69030;" |Repulsion
+| 32
+| 300 seconds
+| Grows with intelligence
+| Adds to armor, knocks back enemies (armor amount grows with level)
+|-
+|}
+{{clr}}
+
+==Fist of Stone==
+===Defensive Enhancements===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Defensive Enhancements
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:petrifyingweapon.jpg]]<br>
+| align="left" style="color:#41AA60;" | Petrifying Weapon
+| 5
+| 300 seconds
+| Grows with Intelligence
+| Chance on hit: Petrify for 2 seconds
+|-
+| [[File:rejuvenatingweapon.jpg]]<br>
+| align="left" style="color:#41AA60;" | Rejuvenating Weapon
+| 8
+| 300 seconds
+| Grows with Intelligence
+| Adds health steal (steal amount grows slowly with level)
+|-
+| [[File:defender.jpg]]<br>
+| align="left" style="color:#41AA60;" | Defender
+| 21
+| 300 seconds
+| Grows with Intelligence
+| Adds +12% armor
+|-
+|}
+{{clr}}
+
+===Offensive Enhancements===
+{| align="left" class="wikitable mw-collapsible sortable highlight" style="width: 100%; text-align: center"
+! style="height: 22px" colspan="7" | Offensive Enhancements
+|-
+! style="height: 22px" | Icon
+! Name
+! Nature Level
+! Duration
+! Mana Cost
+! Effect
+|-
+| [[File:strengthofstone.jpg]]<br>
+| align="left" style="color:#41AA60;" | Strength of Stone
+| N/A
+| 300 seconds
+| Grows with Intelligence
+| Adds strength (strength amount grows with level)
+|-
+| [[File:manastrike.jpg]]<br>
+| align="left" style="color:#41AA60;" | Mana Strike
+| 13
+| 300 seconds
+| Grows with Intelligence
+| Adds melee weapon damage for a mana cost per hit (damage amount and mana cost grow with level)
+|-
+| [[File:earthblast.jpg]]<br>
+| align="left" style="color:#41AA60;" | Earth Blast
+| 32
+| 300 seconds
+| Grows with Intelligence
+| Chance on hit: Earth Blast (Earth Blast damage grows with level)
+|-
+|}
+{{clr}}
+
+=Trivia=
+*The additional shooting damage from Mana Shot depends not only on the skill "Enchanted Weapon" in the Blood Assassin tree, but also on the "Sharp Arrow" in the Archer tree. If the "Mana Shot" says +50 to shooting damage, and the damage bonus from Sharp Arrow is +50%, then in fact "Mana Shot" will add +75 to shooting damage. "Mana Strike" works similarly with the "Suppression" skill in the melee branch.
+
+[[Category: Dungeon Siege II: Gameplay]]
+[[ru:Магия (Dungeon Siege II)]]
