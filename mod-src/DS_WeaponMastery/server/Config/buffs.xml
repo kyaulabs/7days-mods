@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusKnuckles" name_key="buffDSFocusKnucklesName" description_key="buffDSFocusKnucklesDesc" icon="ui_game_symbol_boxer" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusBlades" name_key="buffDSFocusBladesName" description_key="buffDSFocusBladesDesc" icon="ui_game_symbol_knife" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusClubs" name_key="buffDSFocusClubsName" description_key="buffDSFocusClubsDesc" icon="ui_game_symbol_club" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusSledgehammers" name_key="buffDSFocusSledgehammersName" description_key="buffDSFocusSledgehammersDesc" icon="ui_game_symbol_sledge" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusSpears" name_key="buffDSFocusSpearsName" description_key="buffDSFocusSpearsDesc" icon="ui_game_symbol_spear" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusBows" name_key="buffDSFocusBowsName" description_key="buffDSFocusBowsDesc" icon="ui_game_symbol_archery" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusHandguns" name_key="buffDSFocusHandgunsName" description_key="buffDSFocusHandgunsDesc" icon="ui_game_symbol_pistol" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusShotguns" name_key="buffDSFocusShotgunsName" description_key="buffDSFocusShotgunsDesc" icon="ui_game_symbol_shotgun" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusRifles" name_key="buffDSFocusRiflesName" description_key="buffDSFocusRiflesDesc" icon="ui_game_symbol_long_shot" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusMachineguns" name_key="buffDSFocusMachinegunsName" description_key="buffDSFocusMachinegunsDesc" icon="ui_game_symbol_rifle" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusExplosives" name_key="buffDSFocusExplosivesName" description_key="buffDSFocusExplosivesDesc" icon="ui_game_symbol_explosion" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusRobotics" name_key="buffDSFocusRoboticsName" description_key="buffDSFocusRoboticsDesc" icon="ui_game_symbol_junk_turret" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusHarvestingTools" name_key="buffDSFocusHarvestingToolsName" description_key="buffDSFocusHarvestingToolsDesc" icon="ui_game_symbol_tool" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusSalvageTools" name_key="buffDSFocusSalvageToolsName" description_key="buffDSFocusSalvageToolsDesc" icon="ui_game_symbol_wrench" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="buffDSFocusRepairTools" name_key="buffDSFocusRepairToolsName" description_key="buffDSFocusRepairToolsDesc" icon="ui_game_symbol_hammer" duration="600" display_in_hud="true" icon_color="255,255,255">
+			<effect_group/>
+		</buff>
+	</append>
+</configs>

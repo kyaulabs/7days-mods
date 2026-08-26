@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSWeaponMastery>
+	<!--
+		Kill XP curve: kills needed to advance one skill level.
+		killsPerLevel(level) = KillsPerLevelStart + (KillsPerLevelMax - KillsPerLevelStart) * ((level-1)/599)^CurvePower
+		Defaults: ~1 kill per level early, ~200 kills for the final level, ~4500 total kills to master a weapon class.
+	-->
+	<KillXp>
+		<KillsPerLevelStart>1</KillsPerLevelStart>
+		<KillsPerLevelMax>200</KillsPerLevelMax>
+		<CurvePower>30</CurvePower>
+		<StudyBuffMultiplier>2</StudyBuffMultiplier>
+	</KillXp>
+	<!-- Announce a player's weapon skill level-ups to them via chat, every N levels:
+	     25 = announce at 25, 50, 75, ... 0 = disabled. -->
+	<LevelUpAnnounceInterval>25</LevelUpAnnounceInterval>
+	<!-- Study buff: magazines grant a temporary buff that doubles skill gain from use.
+	     Duration in SECONDS (600 = 10 min, 1800 = 30 min). Build-time knob: read by
+	     generate_xml.py and baked into buffs.xml + Localization.csv — change it, then
+	     re-run build.sh (and restart the server so clients get the new buff). -->
+	<StudyBuffDurationSeconds>600</StudyBuffDurationSeconds>
+	<!--
+		Use XP: every successful use (block hit / entity hit) rolls this chance to grant
+		the same progress as a kill. Weapons: small chance, kills are the main source.
+		Tools: small per-hit chance (2.5-5% range feels right), PLUS a guaranteed grant
+		per block destroyed (ToolDestroyChance, 1.0 = every tree/stone pile you break).
+		Repair/upgrade actions (claw hammer) count as a use (chance roll only).
+		UseXpCooldownSeconds limits per-use grants per player+skill (keeps augers sane).
+	-->
+	<UseXp>
+		<WeaponUseChance>0.05</WeaponUseChance>
+		<ToolUseChance>0.03</ToolUseChance>
+		<ToolDestroyChance>1.0</ToolDestroyChance>
+		<UseXpCooldownSeconds>1</UseXpCooldownSeconds>
+	</UseXp>
+	<!-- Diagnostics: true logs every use-XP roll/grant to the server log -->
+	<DebugLogging>false</DebugLogging>
+	<!-- Loot: found item quality = base(1-6)*100 + skill * LootQualityBonusPerSkill, clamped to 1-600 -->
+	<Loot>
+		<LootQualityBonusPerSkill>0.5</LootQualityBonusPerSkill>
+	</Loot>
+	<!-- Set false after the initial wipe if you want to keep player progress -->
+	<Reset>
+		<ResetOnFirstLogin>true</ResetOnFirstLogin>
+	</Reset>
+	<Skills>
+		<Skill skill="craftingKnuckles" tag="knuckleSkill" buff="buffDSFocusKnuckles"/>
+		<Skill skill="craftingBlades" tag="bladeSkill" buff="buffDSFocusBlades"/>
+		<Skill skill="craftingClubs" tag="clubSkill" buff="buffDSFocusClubs"/>
+		<Skill skill="craftingSledgehammers" tag="sledgeSkill" buff="buffDSFocusSledgehammers"/>
+		<Skill skill="craftingSpears" tag="spearSkill" buff="buffDSFocusSpears"/>
+		<Skill skill="craftingBows" tag="bowSkill" buff="buffDSFocusBows"/>
+		<Skill skill="craftingHandguns" tag="handgunSkill" buff="buffDSFocusHandguns"/>
+		<Skill skill="craftingShotguns" tag="shotgunSkill" buff="buffDSFocusShotguns"/>
+		<Skill skill="craftingRifles" tag="rifleSkill" buff="buffDSFocusRifles"/>
+		<Skill skill="craftingMachineGuns" tag="machinegunSkill" buff="buffDSFocusMachineguns"/>
+		<Skill skill="craftingExplosives" tag="explosivesSkill" buff="buffDSFocusExplosives"/>
+		<Skill skill="craftingRobotics" tag="roboticsSkill" buff="buffDSFocusRobotics"/>
+		<Skill skill="craftingHarvestingTools" tag="harvestingSkill" buff="buffDSFocusHarvestingTools" tool="true"/>
+		<Skill skill="craftingSalvageTools" tag="salvagingSkill" buff="buffDSFocusSalvageTools" tool="true"/>
+		<Skill skill="craftingRepairTools" tag="repairingSkill,repairingTools" buff="buffDSFocusRepairTools" tool="true"/>
+	</Skills>
+</DSWeaponMastery>

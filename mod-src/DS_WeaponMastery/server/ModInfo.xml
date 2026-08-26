@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="1_DS_WeaponMastery" />
+	<DisplayName value="Weapon Mastery" />
+	<Description value="Weapon skills level by use. Kill with a weapon class to raise its crafting skill (max 600). Skill = crafted/looted quality on the old 1-600 scale. Magazines grant a 30min study buff instead of levels." />
+	<Author value="Kyau" />
+	<Version value="1.1.7" />
+    <Website value="https://7days.kyaulabs.com" />
+</xml>
