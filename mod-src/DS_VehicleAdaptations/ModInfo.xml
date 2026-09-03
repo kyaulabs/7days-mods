@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <Name value="1_DS_VehicleAdaptations" />
+  <DisplayName value="Vehicle Adaptations" />
+  <Description value="Regenerates destroyed static vehicles and adds delayed burning explosions with vehicle chain reactions." />
+  <Author value="Kyau" />
+  <Version value="1.0.0" />
+  <Website value="https://7days.kyaulabs.com" />
+</xml>

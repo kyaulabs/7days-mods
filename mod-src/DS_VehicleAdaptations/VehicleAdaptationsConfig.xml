@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VehicleAdaptationsConfig>
+  <!-- Percentage of the vehicle's available durability that must be damaged before ignition. -->
+  <IgnitionDamagePercent>75</IgnitionDamagePercent>
+
+  <!-- Real-time warning period between ignition and detonation. -->
+  <FireFuseSeconds>5</FireFuseSeconds>
+
+  <!-- A due vehicle waits until no player is this close before it regenerates. -->
+  <RespawnPlayerClearRadius>32</RespawnPlayerClearRadius>
+
+  <!-- Vanilla looping particle used while a vehicle is burning. -->
+  <FireParticle>campfire</FireParticle>
+
+  <!-- Emit per-hit, ignition, chain, and respawn diagnostics. -->
+  <DebugLogging>false</DebugLogging>
+</VehicleAdaptationsConfig>

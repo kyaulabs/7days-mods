@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configs>
+  <!--
+    Static map vehicles are CompositeTileEntity blocks tagged challenge_cars.
+    Keep each vehicle's existing Explosion settings, but replace vanilla's
+    immediate-on-destruction feature with the persistent fire/fuse feature.
+    Descendants inherit the replacement from these 19 defining blocks.
+  -->
+  <set xpath="/blocks/block[contains(property[@name='Tags']/@value,'challenge_cars')]/property[@class='CompositeFeatures']/property[@class='TEFeatureExplodable']/@class">TEFeatureVehicleAdaptation</set>
+</configs>

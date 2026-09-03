@@ -42,6 +42,7 @@
 **/*.pdb
 **/*.zip
 **/DSResetDone.txt
+/mod-src/DS_VehicleAdaptations/mod/
 /mod-src/DS_WaterDouse/client/
 /mod-src/DS_WeaponMastery/client/
 /mod-src/DS_Zipline/client/

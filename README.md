@@ -47,6 +47,7 @@ add new server files to Git.
 | `DS_LogSpikes` | `1_DS_LogSpikes` | Client + server | Restores classic log spikes with six wood-to-steel tiers. |
 | `DS_SpellMastery` | Not deployed | Design / research | Work-in-progress Dungeon Siege-inspired spell mastery design. |
 | `DS_VehicleCruiseControl` | `1_DS_VehicleCruiseControl` | Client | Q-to-cycle Off/Slow/Sprint vehicle cruise control with HUD status. |
+| `DS_VehicleAdaptations` | `1_DS_VehicleAdaptations` | Client + server | Regenerating static vehicles with delayed fire, explosions and chain reactions. |
 | `DS_WaterDouse` | `1_DS_WaterDouse` | Client + server | Adds a water-item action that removes the 3.x scent effect. |
 | `DS_WeaponMastery` | `1_DS_WeaponMastery` | Client + server | Use-based weapon/tool skills and 1–600 crafting quality. |
 | `ForgeThreeInputSlots` | `1_ForgeThreeInputSlots` | Client + server | XML-only third forge input slot. |
