@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/items">
+    <item name="DSZiplineTool">
+      <property name="Extends" value="meleeToolWireTool" />
+      <property name="CreativeMode" value="Player" />
+      <property name="CustomIcon" value="DSZiplineTool" />
+      <property name="UnlockedBy" value="craftingSalvageTools" />
+      <property name="Tags" value="tool,noMods,electricianSkill,scrap100" />
+      <property name="EconomicValue" value="300" />
+      <property class="Action1">
+        <property name="Class" value="ConnectPower" />
+        <property name="WireOffset" value="-.2,-.1,-.1" />
+        <!-- Five extra meters keep vanilla's carried-wire in-range state valid at
+             the 500 m endpoint; client/server validation enforce the true tier caps. -->
+        <property name="MaxWireLength" value="505" />
+      </property>
+      <property name="Group" value="Tools/Traps" />
+    </item>
+  </append>
+</configs>

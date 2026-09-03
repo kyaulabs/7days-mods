@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/recipes">
+    <!-- Primitive, hand-crafted tier: only common day-one materials. -->
+    <recipe name="DSZiplineAnchorWood" count="1" craft_time="12">
+      <ingredient name="resourceWood" count="60" />
+      <ingredient name="resourceScrapIron" count="20" />
+      <ingredient name="resourceLeather" count="4" />
+    </recipe>
+    <!-- Shares the Electrician tier-4/car-battery unlock at level 55. -->
+    <recipe name="DSZiplineAnchor" count="1" craft_area="workbench" craft_time="45" tags="learnable,carBattery,workbenchCrafting">
+      <ingredient name="DSZiplineAnchorWood" count="1" />
+      <ingredient name="resourceForgedSteel" count="20" />
+      <ingredient name="resourceMechanicalParts" count="10" />
+      <ingredient name="resourceElectricParts" count="12" />
+      <ingredient name="carBattery" count="1" />
+    </recipe>
+    <!-- Reuse the regular wrench's learnable tag so both unlock together. -->
+    <recipe name="DSZiplineTool" count="1" craft_time="10" tags="learnable,meleeToolSalvageT1Wrench">
+      <ingredient name="resourceForgedIron" count="4" />
+      <ingredient name="resourceMechanicalParts" count="2" />
+      <ingredient name="resourceDuctTape" count="1" />
+    </recipe>
+  </append>
+</configs>

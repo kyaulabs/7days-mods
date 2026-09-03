@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/blocks">
+    <block name="DSZiplineAnchor">
+      <property name="CreativeMode" value="Player" />
+      <!-- ReflectionHelpers inserts the Block prefix after the namespace. The
+           assembly qualifier is required for classes outside Assembly-CSharp. -->
+      <property name="Class" value="DSZipline.ZiplineAnchor, DSZipline" />
+      <property name="RequiredPower" value="0" />
+      <property name="UnlockedBy" value="craftingElectrician" />
+      <property name="CustomIcon" value="DSZiplineAnchor" />
+      <property name="DisplayType" value="blockElectrical" />
+      <property name="Material" value="Mmetal_weak" />
+      <!-- Custom ModelEntity shape supplies tier-specific one-voxel bounds.
+           Combined with the 1x3x1 multiblock, every visible section resolves
+           interaction back to this powered parent block. -->
+      <property name="Shape" value="DSZipline.ZiplineAnchor, DSZipline" />
+      <property name="MultiBlockDim" value="1,3,1" />
+      <!-- A vanilla prefab is the dedicated-server-safe fallback. The client DLL
+           replaces its renderer with the custom runtime mesh after cloning. -->
+      <property name="Model" value="@:Entities/Electrical/electric_fencePrefab.prefab" />
+      <property name="ImposterDontBlock" value="true" />
+      <property name="WaterFlow" value="permitted" />
+      <property name="HandleFace" value="Bottom" />
+      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+      <property name="StabilitySupport" value="false" />
+      <property name="MaxDamage" value="500" />
+      <property name="TakeDelay" value="2" />
+      <property name="EconomicValue" value="260" />
+      <property name="SoundPickup" value="switch_grab" />
+      <property name="SoundPlace" value="switch_place" />
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="4" />
+      </property>
+      <drop event="Destroy" name="resourceScrapIron" count="4,8" />
+      <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+      <property name="Group" value="Building" />
+      <property name="Tags" value="electricianSkill,scrap100" />
+      <property name="FilterTags" value="MC_building,SC_electrical,SC_traps" />
+      <property name="SortOrder1" value="B760" />
+      <property name="SortOrder2" value="0091" />
+    </block>
+
+    <block name="DSZiplineAnchorWood">
+      <property name="CreativeMode" value="Player" />
+      <property name="Class" value="DSZipline.ZiplineAnchorWood, DSZipline" />
+      <property name="RequiredPower" value="0" />
+      <property name="CustomIcon" value="DSZiplineWoodAnchor" />
+      <property name="DisplayType" value="blockElectrical" />
+      <property name="Material" value="Mwood_weak" />
+      <property name="Shape" value="DSZipline.ZiplineAnchor, DSZipline" />
+      <property name="MultiBlockDim" value="1,3,1" />
+      <property name="Model" value="@:Entities/Electrical/electric_fencePrefab.prefab" />
+      <property name="ImposterDontBlock" value="true" />
+      <property name="WaterFlow" value="permitted" />
+      <property name="HandleFace" value="Bottom" />
+      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+      <property name="StabilitySupport" value="false" />
+      <property name="MaxDamage" value="300" />
+      <property name="TakeDelay" value="1.5" />
+      <property name="EconomicValue" value="80" />
+      <property name="SoundPickup" value="woodblock_grab" />
+      <property name="SoundPlace" value="woodblock_place" />
+      <property class="RepairItems">
+        <property name="resourceWood" value="10" />
+      </property>
+      <drop event="Destroy" name="resourceWood" count="20,30" />
+      <drop event="Fall" name="resourceWood" count="10" prob="0.75" stick_chance="1" />
+      <property name="Group" value="Building" />
+      <property name="FilterTags" value="MC_building,SC_traps" />
+      <property name="SortOrder1" value="B760" />
+      <property name="SortOrder2" value="0090" />
+    </block>
+  </append>
+</configs>

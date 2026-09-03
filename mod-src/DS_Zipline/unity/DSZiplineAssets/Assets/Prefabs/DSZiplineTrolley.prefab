@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &637341119593412492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5049488396910625803}
+  - component: {fileID: 6453850183024247589}
+  - component: {fileID: 8474059425441532482}
+  m_Layer: 0
+  m_Name: DSZiplineTrolleyModel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5049488396910625803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637341119593412492}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8391636548244760784}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6453850183024247589
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637341119593412492}
+  m_Mesh: {fileID: 7484677965613037635, guid: 2be4ee6962821c0b7b41103b94013347, type: 3}
+--- !u!23 &8474059425441532482
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637341119593412492}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 13723d5c49c8d4c2ca2b36107ea0f931, type: 2}
+  - {fileID: 2100000, guid: 5b0e8a7a19b56837987585d2bb33d1bf, type: 2}
+  - {fileID: 2100000, guid: b3cbccaf24c5f1fc29bb811c8b414707, type: 2}
+  - {fileID: 2100000, guid: 2cd84daf522204b21848da9aa91506be, type: 2}
+  - {fileID: 2100000, guid: 792ca52119d4fad40a813f4d421d00d8, type: 2}
+  - {fileID: 2100000, guid: c7a9f5203d752ab33ad709235b373ddf, type: 2}
+  - {fileID: 2100000, guid: cc63fa9c5396b01b5be2ef7fff6427d9, type: 2}
+  - {fileID: 2100000, guid: 102d22bb8e971e55abe628e766a8db55, type: 2}
+  - {fileID: 2100000, guid: 80b32607b868f2063bc4d28850fbeff6, type: 2}
+  - {fileID: 2100000, guid: 815aee8f06a17ac6fbe487b56ccb12e8, type: 2}
+  - {fileID: 2100000, guid: 2427a21a234f8cb8183c07847604c0cb, type: 2}
+  - {fileID: 2100000, guid: 7cabe4d635aea9399911eb9b565b00ca, type: 2}
+  - {fileID: 2100000, guid: 824f28783442c5d4eb56dc7047a7b816, type: 2}
+  - {fileID: 2100000, guid: 7fd466409f0c78b8f8e1c1025a5f2c7f, type: 2}
+  - {fileID: 2100000, guid: b4ee3371a76c388d086f13cf0b1a657e, type: 2}
+  - {fileID: 2100000, guid: 4a8926aa8e81a3ff09ce68cb9cf5b593, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4855925672101209011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8391636548244760784}
+  m_Layer: 0
+  m_Name: DSZiplineTrolley
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8391636548244760784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4855925672101209011}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5049488396910625803}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

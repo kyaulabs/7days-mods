@@ -44,7 +44,14 @@
 **/DSResetDone.txt
 /mod-src/DS_WaterDouse/client/
 /mod-src/DS_WeaponMastery/client/
+/mod-src/DS_Zipline/client/
 /mod-src/KYAU_Dashboard/webroot/downloads/
+
+# Unity asset-pipeline caches (the project source, prefabs, and GUID metadata stay tracked)
+/mod-src/DS_Zipline/unity/DSZiplineAssets/Library/
+/mod-src/DS_Zipline/unity/DSZiplineAssets/Logs/
+/mod-src/DS_Zipline/unity/DSZiplineAssets/Temp/
+/mod-src/DS_Zipline/unity/DSZiplineAssets/UserSettings/
 /mod-src/KYAU_Dashboard/webroot/assets/mods.json
 
 # Essential upstream/binary-only inputs retained for provenance/reproduction

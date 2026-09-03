@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <!-- Show the Sonic anchor alongside batteries in Electrician tier 4. The
+       recipe's carBattery tag separately enforces this same unlock level. -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT4']">
+    <unlock_entry item="DSZiplineAnchor" unlock_tier="1" />
+  </append>
+
+  <!-- The tool recipe shares the wrench's unlock tag; list it in that same
+       live display row as well (Weapon Mastery may move the row to level 100). -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/display_entry[@item='meleeToolSalvageT1Wrench']">
+    <unlock_entry item="DSZiplineTool" unlock_tier="1" />
+  </append>
+</configs>
