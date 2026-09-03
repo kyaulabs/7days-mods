@@ -35,7 +35,8 @@ import xml.etree.ElementTree as ET
 import zipfile
 
 SRC = os.path.dirname(os.path.abspath(__file__))
-MODS_DIR = "/srv/7days/Mods"
+SERVER_ROOT = os.environ.get("SEVENDAYS_ROOT", "/srv/7days")
+MODS_DIR = os.path.join(SERVER_ROOT, "Mods")
 DOTNET = "/bin/dotnet"
 WEBROOT = os.path.join(MODS_DIR, "ZZ_KYAU_Dashboard", "webroot")
 ZIP_PATH = os.path.join(WEBROOT, "downloads", "AfterHours_ClientMods.zip")
@@ -50,6 +51,7 @@ CLIENT_MODS = [
     "1_DS_VehicleCruiseControl",
     "1_DS_WaterDouse",
     "1_DS_WeaponMastery",
+    "1_DS_Zipline",
     "1_ForgeThreeInputSlots",
 ]
 
@@ -60,6 +62,7 @@ HIGHLIGHT_MODS = {
     "1_DS_WaterDouse",
     "1_DS_WeaponMastery",
     "1_DS_VehicleCruiseControl",
+    "1_DS_Zipline",
     "1_ForgeThreeInputSlots",
     "1_VanillaPlus",
     "2_KYAU_AfterHoursApi",
@@ -76,6 +79,7 @@ HIDDEN_MODS = {"0_TFP_Harmony"}
 CLIENT_PACK_OVERRIDES = {
     "1_DS_WeaponMastery": os.path.join(SRC, "DS_WeaponMastery", "client"),
     "1_DS_WaterDouse": os.path.join(SRC, "DS_WaterDouse", "client"),
+    "1_DS_Zipline": os.path.join(SRC, "DS_Zipline", "client"),
 }
 
 # Server runtime-state files that must never ship in the client modpack.
@@ -147,6 +151,30 @@ MODS = [
         "cp README.md client/README_WaterDouse_Client.txt",
         "rm -rf {MODS}/1_DS_WaterDouse",
         "cp -r server {MODS}/1_DS_WaterDouse",
+    ]),
+    ("DS_Zipline", "1_DS_Zipline", "server", True, [
+        "python3 tools/verify_assets.py",
+        "rm -rf server/Resources",
+        "python3 tools/verify_xml.py",
+        "{DOTNET} build src/DSZiplineServer/DSZiplineServer.csproj -c Release -v q --nologo",
+        "{DOTNET} build src/DSZiplineClient/DSZiplineClient.csproj -c Release -v q --nologo",
+        "cp src/DSZiplineServer/bin/Release/DSZipline.dll server/",
+        "cp {MODS}/0_TFP_Harmony/0Harmony.dll server/",
+        "cp art/ATTRIBUTION.md server/ATTRIBUTION_DS_Zipline.md",
+        # Client pack staging (ships client build under the same DLL name)
+        "rm -rf client && mkdir -p client",
+        "cp src/DSZiplineClient/bin/Release/DSZipline.dll client/DSZipline.dll",
+        "cp {MODS}/0_TFP_Harmony/0Harmony.dll client/",
+        "cp server/ModInfo.xml client/",
+        "cp -r server/Config client/Config",
+        "cp -r server/UIAtlases client/UIAtlases",
+        "mkdir -p client/Resources/tool",
+        "cp art/generated/dszipline.meshbin client/Resources/",
+        "cp art/generated/tool/* client/Resources/tool/",
+        "cp README.md client/README_DS_Zipline.txt",
+        "cp art/ATTRIBUTION.md client/ATTRIBUTION_DS_Zipline.md",
+        "rm -rf {MODS}/1_DS_Zipline",
+        "cp -r server {MODS}/1_DS_Zipline",
     ]),
     ("DS_WeaponMastery", "1_DS_WeaponMastery", "server", True, [
         "python3 tools/generate_xml.py",
