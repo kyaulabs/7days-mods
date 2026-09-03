@@ -9,7 +9,7 @@ namespace DSZipline
     {
         public void InitMod(Mod modInstance)
         {
-            Log.Out("[DSZipline] V0.3.5 movement spike (client) initializing...");
+            Log.Out("[DSZipline] V0.3.6 movement spike (client) initializing...");
             ZiplineRideBridge.StartRide = ZiplineRider.TryStart;
             new Harmony("DSZipline.Client").PatchAll(Assembly.GetExecutingAssembly());
             ZiplineArt.Initialize(modInstance.Path);

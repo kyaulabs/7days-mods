@@ -1,4 +1,4 @@
-# DS_Zipline V0.3.5 — two-tier movement spike
+# DS_Zipline V0.3.6 — two-tier movement spike
 
 This is a deliberately limited runtime prototype for 7 Days to Die V3.2.0 b9.
 It tests whether a local player can move smoothly along a persistent vanilla

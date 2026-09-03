@@ -7,7 +7,7 @@
 **Planned deployment:** `Mods/1_DS_Zipline/`
 **Distribution:** required on the dedicated server and in `AfterHours_ClientMods.zip`
 
-**Current status (2026-09-02):** Phase 0 is built as V0.3.5. A clean headless
+**Current status (2026-09-02):** Phase 0 is built as V0.3.6. A clean headless
 boot resolved the custom block class and merged all XML with no DS_Zipline errors.
 Graphical testing through V0.1.4 confirms smooth first/third-person travel,
 no camera shake or server rubber-banding, normal walking restoration, correct

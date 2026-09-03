@@ -10,7 +10,7 @@ namespace DSZipline
         public void InitMod(Mod modInstance)
         {
             new Harmony("DSZipline.Server").PatchAll(Assembly.GetExecutingAssembly());
-            Log.Out("[DSZipline] V0.3.5 movement spike (server) initialized.");
+            Log.Out("[DSZipline] V0.3.6 movement spike (server) initialized.");
         }
     }
 }
